@@ -1,0 +1,46 @@
+  .block {
+    height: 100px;
+    color: white;
+  }
+  .block-menu {
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 32px;
+  }
+  .category {
+
+ text-decoration-color: white;
+
+  width: 108px;
+  height: 108px;
+  border-radius: 0px 8px 8px 0px;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+  overflow: auto;
+
+  }
+
+.category:hover   {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+
+}
+
+.category:hover > .category-name {
+  color: black;
+ }
+
+ .category:hover > .category-icon {
+ transform: scale(0.8);
+  
+ }
+ .category-name {
+  color: white;
+ }
+
+.category-icon {
+  width: auto;
+  
+  
+ }
