@@ -17,6 +17,7 @@
 	border-radius: 8px  0px 0px 8px;
 	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
 	z-index: 2;
+	box-sizing: content-box !important;
 	 
 }
 .section-title-label, .letter {
@@ -39,6 +40,7 @@
 	border-radius: 0px 8px 8px 0px;
 	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
 	overflow: auto;
+	box-sizing: content-box !important;
 }
 
 .section-text {
@@ -60,7 +62,8 @@
 	flex-direction: column;
 	justify-content: center;	
 	position:  relative; 
-	margin: 56px 0px 0px 0px;	
+	margin: 56px 0px 0px 0px;
+
 }
 
 .kitchener-description {
@@ -73,6 +76,7 @@
 	border-radius: 8px;
 	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
 	margin: 8px;
+	box-sizing: content-box !important;
 }
 
 
@@ -86,6 +90,7 @@
 	object-fit: cover;
 	border-radius: 100%;
 	box-shadow: 2px 1px 1px 1px rgba(0,0,0,0.2);
+	box-sizing: content-box !important;
 }
 
 .kitchener-citation {
@@ -110,10 +115,12 @@
 	width: 212px;
 	height: 212px;
 	object-fit: cover;
+	box-sizing: content-box !important;
 }
 
 .map {
 	height:400px;
 	border:0; 
 	width: 100%;
+	box-sizing: content-box !important;
 }
