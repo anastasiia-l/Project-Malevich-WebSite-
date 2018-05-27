@@ -1,17 +1,23 @@
   .block {
-    height: 100px;
+    height: 200px;
     color: white;
+
   }
+
+.parallax-container .parallax img {
+  object-fit: cover;
+  width: 50%;
+}
+  
   .block-menu {
     display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 32px;
+  height: 200px
   }
   .category {
-
- text-decoration-color: white;
-
+  
   width: 108px;
   height: 108px;
   border-radius: 0px 8px 8px 0px;
@@ -21,10 +27,8 @@
   }
 
 .category:hover   {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
-
+ 
+width: 128px;
 }
 
 .category:hover > .category-name {
@@ -43,4 +47,10 @@
   width: auto;
   
   
+ }
+
+ .test {
+   -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
  }
