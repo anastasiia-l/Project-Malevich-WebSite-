@@ -10,7 +10,32 @@
   align-items: center;
   justify-content: center;
   margin: 0px;
-  height: 332px
+  height: 176px;
+  z-index: 99;
+}
+.wrapper {
+  height: 85% !important;
+}
+.parallax-container {
+      height: 50%;
+}
+
+.subtitle {
+  width: 100%;
+  position : absolute;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 36px;
+  text-align: right ;
+}
+
+.title {
+  width: 100%;
+  position  : absolute;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 72px;
+  text-align: center;
 }
 
   .category { 
