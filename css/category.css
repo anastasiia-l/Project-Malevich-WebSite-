@@ -10,7 +10,7 @@
 .breadcrumbs a {
     position: relative;
     float: left;
-    padding-left: 60px;
+    padding-left: 40px;
     padding-right: 10px;
     text-decoration: none;
     line-height: 36px;
@@ -38,25 +38,26 @@
 .breadcrumbs a:hover::after,
 .breadcrumbs a.active,
 .breadcrumbs a.active::after{
-    background: #f1c40f;
+    background: red;
+    color: white;
 }
 
-.breadcrumbs a::before {
-    content: counter(flag);
-    counter-increment: flag;
-    position: absolute;
-    top: 8px;
-    left: 30px;
-    line-height: 20px;
-    box-shadow: 0 0 2px #ccc;
-    width: 20px; background-color: white;
-    border-radius: 50%;
-}
+
 
 .breadcrumbs a:first-child {
     padding-left: 46px;
 }
 
-.breadcrumbs a:first-child::before {
-    left: 14px;
+
+.category-bar {
+    background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+}
+select {
+    display: block !important;
+    width: auto !important;
 }
