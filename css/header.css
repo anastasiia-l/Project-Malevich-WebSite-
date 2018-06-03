@@ -1,0 +1,179 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    height: 27.3vh;
+    background-color: black;
+    flex-direction:column;
+}
+
+.firstRow{
+    height: 75%;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+.firstRow .socIcon{
+    display: flex;
+    width: 24.9%;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 18px;
+    padding-right: 82px;
+
+}
+
+.firstRow .socIcon a{
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.firstRow .logo{
+    display: flex;
+    position: relative;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 18px; 
+
+}
+
+.firstRow .logo span{
+    font-family: 'ADAM.CG PRO';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 68px;
+    color: white;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;  
+
+}
+
+.firstRow .ProfileAndBasket{
+    font-family:  'Oswald';
+    font-weight: 300;
+    font-style: normal;
+    font-size: 24px;
+    color: white;
+    width: 24.9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    padding-left: 75px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;  
+}
+
+.firstRow .ProfileAndBasket .navBtn{
+    padding-top: 10px;
+    width: 120px;
+    justify-content: flex-start;
+}
+
+.firstRow .ProfileAndBasket :nth-child(1){
+    padding-bottom: 5px;
+}
+
+.secondRow{
+    align-items: flex-end;
+    font-family: 'Oswald Regular', 'Oswald';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 29.5px;
+    color: white;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    z-index: 100;  
+}
+
+/*иконка для меню*/
+.menu__list i {
+    display: inline-block;
+    content: " ";
+    position: relative;
+    border: 6px solid white;
+    border-color: black black black white;
+    left: 7px; 
+    /* transition: transform 0.3s; */
+}
+
+/*Направление стрелочки*/
+.down{
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+}
+
+/*ТИПА АНИМАЦИЯ*/
+.menu__list a:hover > i{
+    border-color: black white black black;
+    bottom: 6px;
+}
+
+.secondRow .nav-menu *{
+    padding: 0%;
+    margin: 0%;
+}
+
+.secondRow .nav-menu > ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.secondRow .nav-menu > ul li a{
+    display: block;
+    padding: 0px 30px 10px 30px;
+}
+
+.nav-menu li ul{
+    width: inherit;
+    background-color: black;
+    position: absolute;
+    display: none;
+}
+
+/*ужас*/
+.secondRow .nav-menu ul li > ul li a{
+    text-align: center;
+    padding: 10px 25px 10px 25px;
+    font-size: 21px;
+    text-transform: none;
+}
+
+.nav-menu li > ul li {
+    border: 1px solid black;
+}
+
+.nav-menu li:hover >ul{
+    display: block;
+} 
+
+.nav-menu li ul a:hover{
+    background: rgba(37, 37, 37, 0.647);
+}
+
+
+
+
+
