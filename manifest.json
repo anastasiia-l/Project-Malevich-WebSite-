@@ -1,0 +1,9 @@
+{
+  // Required
+  "manifest_version": 1,
+  "name": "My Extension",
+  "version": "versionString",
+
+"permissions": ["https://malevich-server.herokuapp.com/*/"]
+ 
+}
