@@ -3,7 +3,7 @@ $('document').ready(function(){
 });
 
 function loadGoods() {
-var requestOpenSession = "GET: https://malevich-server.herokuapp.com/session/start";
+var requestOpenSession = "https://malevich-server.herokuapp.com/session/start";
 
 var request = new XMLHttpRequest();
 request.responseType = 'text';
