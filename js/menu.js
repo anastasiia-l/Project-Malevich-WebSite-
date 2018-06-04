@@ -10,6 +10,7 @@ request.responseType = 'text';
 request.open('GET', requestOpenSession);
 
 request.send();
+console.log(request.response);
 
 var requestMenuURL = 'https://malevich-server.herokuapp.com/menu/all';
 
