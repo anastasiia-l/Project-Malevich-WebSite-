@@ -6,9 +6,7 @@ function loadGoods() {
 var requestOpenSession = "https://malevich-server.herokuapp.com/session/start";
 
 var request = new XMLHttpRequest();
-request.responseType = 'text';
 request.open('GET', requestOpenSession);
-
 request.send();
 console.log(request.response);
 
