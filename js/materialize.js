@@ -9701,6 +9701,7 @@ $jscomp.polyfill = function (e, r, p, m) {
         }
 
         if (this.currentView === 'hours') {
+          _this57.done();//исправление
           this.showView('minutes', this.options.duration / 2);
         } else if (this.options.autoClose) {
           $(this.minutesView).addClass('timepicker-dial-out');

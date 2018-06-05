@@ -5,8 +5,9 @@
 	<link href="css/header.css" rel="stylesheet">
 	<link href="css/menu.css" rel="stylesheet">
 	<link href="css/footer.css" rel="stylesheet">
+	<link href="css/fixed_header.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-	  crossorigin="anonymous">
+	    crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
 	<!--Import Google Icon Font-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -124,6 +125,83 @@
 		</div>
 	</header>
 
+	<div class="fixed" style="z-index: 100;">
+		<div class="fixed-block">
+			<div class="fixed-menu-logo">
+				<a href="#" title="На главную страничку">
+					<span>
+						<span style="color: red">M</span>ALEVICH</span>
+				</a>
+			</div>
+			<div class="fixed-menu">
+				<ul>
+					<li class="menu__list">
+						<a href="#">МЕНЮ
+							<i class="down"></i>
+						</a>
+						<ul>
+							<li>
+								<a href="#">Пицца</a>
+							</li>
+							<li>
+								<a href="#">Фастфуд</a>
+							</li>
+							<li>
+								<a href="#">Суши</a>
+							</li>
+							<li>
+								<a href="#">Закуски</a>
+							</li>
+							<li>
+								<a href="#">Паста</a>
+							</li>
+							<li>
+								<a href="#">Бизнес-ланч</a>
+							</li>
+							<li>
+								<a href="#">Супы</a>
+							</li>
+							<li>
+								<a href="#">Десерты</a>
+							</li>
+							<li>
+								<a href="#">Напитки</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">ДОСТАВКА И ОПЛАТА</a>
+					</li>
+					<li>
+						<a href="#">ОНЛАЙН БРОНЬ</a>
+					</li>
+					<li class="menu__list">
+						<a href="#">О НАС
+							<i class="down"></i>
+						</a>
+						<ul>
+							<li>
+								<a href="#">Кухня</a>
+							</li>
+							<li>
+								<a href="#">Шеф-повары</a>
+							</li>
+							<li>
+								<a href="#">Рестораны</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="fixed-basket">
+				<div class="fixed-navBtn">
+					<i class="fa fa-shopping-basket fa-fw" aria-hidden="true"></i>
+					<span>Корзина</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div class="wrapper">
 		<div class="parallax-container">
 			<div class="parallax">
@@ -215,6 +293,7 @@
 			$('.parallax').parallax();
 		});
 	</script>
+	<script src="js/fixed_header.js"></script>
 
 </body>
 
