@@ -151,6 +151,7 @@ header {
     background-color: black;
     position: absolute;
     display: none;
+    z-index: 150;
 }
 
 /*ужас*/

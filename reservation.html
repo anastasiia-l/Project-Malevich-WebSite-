@@ -20,7 +20,7 @@
     <!--Import materialize.css-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
 
 </head>
 
@@ -30,7 +30,7 @@
         <div class="firstRow">
             <div class="socIcon">
                 <a href="https://www.instagram.com/">
-                    <i class="fab fa-instagram fa-2x" aria-hidden="true" style="color: red;"></i>
+                    <i class="fab fa-instagram fa-2x" aria-hidden="true" style="color: white;"></i>
                 </a>
                 <a href="https://www.facebook.com/">
                     <i class="fab fa-facebook-square fa-2x" aria-hidden="true" style="color:white ;"></i>
@@ -44,7 +44,7 @@
             </div>
 
             <div class="logo">
-                <a href="aboutUs.html" title="На главную страничку">
+                <a href="about.html" title="На главную страничку">
                     <span>
                         <span style="color: red">M</span>ALEVICH</span>
                 </a>
@@ -76,7 +76,7 @@
                         </a>
                         <ul>
                             <li>
-                                <a href="#">Пицца</a>
+                                <a href="category.html">Пицца</a>
                             </li>
                             <li>
                                 <a href="#">Фастфуд</a>
@@ -108,15 +108,15 @@
                         <a href="info.html">ДОСТАВКА И ОПЛАТА</a>
                     </li>
                     <li>
-                        <a href="#">ОНЛАЙН БРОНЬ</a>
+                        <a href="reservation.html">ОНЛАЙН БРОНЬ</a>
                     </li>
                     <li class="menu__list">
-                        <a href="#">О НАС
+                        <a href="about.html">О НАС
                             <i class="down"></i>
                         </a>
                         <ul class="dropdown-menu_about">
                             <li>
-                                <a href="#">Кухня</a>
+                                <a href="about.html">Кухня</a>
                             </li>
                             <li>
                                 <a href="#">Шеф-повары</a>
@@ -139,10 +139,13 @@
                         <p>Забронировать стол</p>
                     </div>
                     <div class="date_picker">
-                        <input type="date" name="Дата" id="date" placeholder="Выберите дату" value="" min="">
+                        <input type="date" name="Дата" id="date" placeholder="Выберите дату" value="">
                     </div>
                     <div class="time_pick">
-                        <input type="text" class="timepicker" id="time" name="Время">
+                        <input type="text" class="timepicker" id="time" name="Время" placeholder="Выбрать время" readonly>
+                    </div>
+                    <div class="pretty-line">
+                        <hr>
                     </div>
                 </div>
             </div>
@@ -243,7 +246,9 @@
     </div>
 
     <div class="footer">
-        <img class="footer-logo" src="images/logo.png" alt="Малевич">
+        <a href="about.html">
+            <img class="footer-logo" src="images/logo.png" alt="Малевич">
+        </a>
         <div>
             <p class="footer-company">© 2002 - 2018 MALEVICH
                 <br>Все права защищены.
@@ -253,37 +258,51 @@
         </div>
 
         <div>
-            <p class="footer-links">Меню</p>
-            <p class="footer-links">Профиль</p>
+            <a href="menu.html">
+                <p class="footer-links">Меню</p>
+            </a>
+            <a href="#">
+                <p class="footer-links">Профиль</p>
+            </a>
         </div>
         <div>
-            <p class="footer-links">Доставка и оплата</p>
-            <p class="footer-links">Онлайн бронь</p>
+            <a href="info.html">
+                <p class="footer-links">Доставка и оплата</p>
+            </a>
+            <a href="reservation.html">
+                <p class="footer-links">Онлайн бронь</p>
+            </a>
         </div>
         <div>
-            <p class="footer-links">О нас</p>
+            <a href="about.html">
+                <p class="footer-links">О нас</p>
+            </a>
             <p class="footer-links"> </p>
         </div>
         <div class="footer-social">
-            <p class="footer-icons">
-                <i class="fab fa-instagram"></i>
-            </p>
-            <p class="footer-icons">
-                <i class="fab fa-facebook-square"></i>
-            </p>
-            <p class="footer-icons">
-                <i class="fab fa-twitter-square"></i>
-            </p>
-            <p class="footer-icons">
-                <i class="fab fa-google-plus-square"></i>
-            </p>
+            <a href="https://www.instagram.com/">
+                <p class="footer-icons">
+                    <i class="fab fa-instagram"></i>
+                </p>
+            </a>
+            <a href="https://www.facebook.com/">
+                <p class="footer-icons">
+                    <i class="fab fa-facebook-square"></i>
+                </p>
+            </a>
+            <a href="https://twitter.com/">
+                <p class="footer-icons">
+                    <i class="fab fa-twitter-square"></i>
+                </p>
+            </a>
+            <a href="https://plus.google.com/discover">
+                <p class="footer-icons">
+                    <i class="fab fa-google-plus-square"></i>
+                </p>
+            </a>
         </div>
     </div>
-
-    <script>$(document).ready(function(){
-            $('.timepicker').timepicker();
-          });</script>
-
+    <script type="text/javascript" src="js/materialize.js"></script>
     <script src="js/date_picker.js"></script>
     <script src="js/time_picker.js"></script>
 </body>
