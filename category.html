@@ -8,8 +8,9 @@
 	<link href="css/menu.css" rel="stylesheet">
 	<link href="css/footer.css" rel="stylesheet">
 	<link href="css/category.css" rel="stylesheet">
+	<link href="css/fixed_header.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-	  crossorigin="anonymous">
+	    crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
 	<!--Import Google Icon Font-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -26,7 +27,7 @@
 		<div class="firstRow">
 			<div class="socIcon">
 				<a href="https://www.instagram.com/">
-					<i class="fab fa-instagram fa-2x" aria-hidden="true" style="color: red;"></i>
+					<i class="fab fa-instagram fa-2x" aria-hidden="true" style="color: white;"></i>
 				</a>
 				<a href="https://www.facebook.com/">
 					<i class="fab fa-facebook-square fa-2x" aria-hidden="true" style="color:white ;"></i>
@@ -40,7 +41,7 @@
 			</div>
 
 			<div class="logo">
-				<a href="aboutUs.html" title="На главную страничку">
+				<a href="about.html" title="На главную страничку">
 					<span>
 						<span style="color: red">M</span>ALEVICH</span>
 				</a>
@@ -67,12 +68,12 @@
 			<div class="nav-menu">
 				<ul class="menu">
 					<li class="menu__list">
-						<a href="#">МЕНЮ
+						<a href="menu.html">МЕНЮ
 							<i class="down"></i>
 						</a>
 						<ul>
 							<li>
-								<a href="#">Пицца</a>
+								<a href="category.html">Пицца</a>
 							</li>
 							<li>
 								<a href="#">Фастфуд</a>
@@ -104,15 +105,15 @@
 						<a href="info.html">ДОСТАВКА И ОПЛАТА</a>
 					</li>
 					<li>
-						<a href="#">ОНЛАЙН БРОНЬ</a>
+						<a href="reservation.html">ОНЛАЙН БРОНЬ</a>
 					</li>
 					<li class="menu__list">
-						<a href="#">О НАС
+						<a href="about.html">О НАС
 							<i class="down"></i>
 						</a>
 						<ul class="dropdown-menu_about">
 							<li>
-								<a href="#">Кухня</a>
+								<a href="about.html">Кухня</a>
 							</li>
 							<li>
 								<a href="#">Шеф-повары</a>
@@ -127,148 +128,248 @@
 		</div>
 	</header>
 
+	<div class="fixed" style="z-index: 100;">
+		<div class="fixed-block">
+			<div class="fixed-menu-logo">
+				<a href="about.html" title="На главную страничку">
+					<span>
+						<span style="color: red">M</span>ALEVICH</span>
+				</a>
+			</div>
+			<div class="fixed-menu">
+				<ul>
+					<li class="menu__list">
+						<a href="menu.html">МЕНЮ
+							<i class="down"></i>
+						</a>
+						<ul>
+							<li>
+								<a href="category.html">Пицца</a>
+							</li>
+							<li>
+								<a href="#">Фастфуд</a>
+							</li>
+							<li>
+								<a href="#">Суши</a>
+							</li>
+							<li>
+								<a href="#">Закуски</a>
+							</li>
+							<li>
+								<a href="#">Паста</a>
+							</li>
+							<li>
+								<a href="#">Бизнес-ланч</a>
+							</li>
+							<li>
+								<a href="#">Супы</a>
+							</li>
+							<li>
+								<a href="#">Десерты</a>
+							</li>
+							<li>
+								<a href="#">Напитки</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="info.html">ДОСТАВКА И ОПЛАТА</a>
+					</li>
+					<li>
+						<a href="reservation.html">ОНЛАЙН БРОНЬ</a>
+					</li>
+					<li class="menu__list">
+						<a href="about.html">О НАС
+							<i class="down"></i>
+						</a>
+						<ul>
+							<li>
+								<a href="about.html">Кухня</a>
+							</li>
+							<li>
+								<a href="#">Шеф-повары</a>
+							</li>
+							<li>
+								<a href="#">Рестораны</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="fixed-basket">
+				<div class="fixed-navBtn">
+					<i class="fa fa-shopping-basket fa-fw" aria-hidden="true"></i>
+					<span>Корзина</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<div class="wrapper">
 		<div class="content">
-					 	<div class="block-menu">
-			<div class="category">
-				<img class="category-icon" src="images/cat_snacks.png">
-				<p class="category-name">Закуски</p>
-			</div>
-			<div class="category">
-				<img src="images/cat_pasta.png">
-				<p class="category-name">Паста</p>
-			</div>
-			<div class="category">
-				<img src="images/cat_sushi.png">
-				<p class="category-name">Суши</p>
-			</div>
-			<div class="category">
-				<img src="images/cat_pizza.png">
-				<p class="category-name">Пицца</p>
-			</div>
-			<div class="category">
-				<img src="images/cat_burgers.png">
-				<p class="category-name">Бургеры</p>
-			</div>
-			<div class="category">
-				<img src="images/cat_salats.png">
-				<p class="category-name">Салаты</p>
-			</div>
-			<div class="category">
-				<img src="images/cat_desserts.png">
-				<p class="category-name">Десерты</p>
-			</div>
-			<div class="category">
-				<img src="images/cat_drinks.png">
-				<p class="category-name">Напитки</p>
-			</div>
+			<div class="block-menu">
+				<div class="category">
+					<img class="category-icon" src="images/cat_snacks.png">
+					<p class="category-name">Закуски</p>
+				</div>
+				<div class="category">
+					<img src="images/cat_pasta.png">
+					<p class="category-name">Паста</p>
+				</div>
+				<div class="category">
+					<img src="images/cat_sushi.png">
+					<p class="category-name">Суши</p>
+				</div>
+				<div class="category">
+					<img src="images/cat_pizza.png">
+					<p class="category-name">Пицца</p>
+				</div>
+				<div class="category">
+					<img src="images/cat_burgers.png">
+					<p class="category-name">Бургеры</p>
+				</div>
+				<div class="category">
+					<img src="images/cat_salats.png">
+					<p class="category-name">Салаты</p>
+				</div>
+				<div class="category">
+					<img src="images/cat_desserts.png">
+					<p class="category-name">Десерты</p>
+				</div>
+				<div class="category">
+					<img src="images/cat_drinks.png">
+					<p class="category-name">Напитки</p>
+				</div>
 			</div>
 			<div class="category-bar">
-				 <div class="breadcrumbs">
-            		<a href="#">Меню</a>
-            		<a class="active" href="#">Паста</a>
-       			</div>
-       			<select>
+				<div class="breadcrumbs">
+					<a href="#">Меню</a>
+					<a class="active" href="#">Паста</a>
+				</div>
+				<select>
 					<option value="Sony">Sony</option>
 					<option value="Toshiba">Toshiba</option>
 					<option value="Acer">Acer</option>
 					<option value="Asus">Asus</option>
 				</select>
-       			
+
 			</div>
-		
 
-			<div id = "goods" class="dish-list">
-				<div class="dish-card">
-					<img class="dish-img" src="images/dish4.jpg">
-					<p class="dish-title">Название</p>
-					<div class="dish-description">
-						<p class="dish-description">Описание арполл порлд рол рол рпол</p>
-					</div>
-					<p class="dish-cost">568<p>
-					<div class="order-button">Заказать</div>
-				</div>
-				<div class="dish-card">
-					<img class="dish-img" src="images/dish4.jpg">
-					<p class="dish-title">Название</p>
-					<div class="dish-description">
-						<p class="dish-description">Описание арполл порлд рол рол рпол</p>
-					</div>
-					<p class="dish-cost">568<p>
-					<div class="order-button">Заказать</div>
-				</div>
-				<div class="dish-card">
-					<img class="dish-img" src="images/dish4.jpg">
-					<p class="dish-title">Название</p>
-					<div class="dish-description">
-						<p class="dish-description">Описание арполл порлд рол рол рпол</p>
-					</div>
-					<p class="dish-cost">568<p>
-					<div class="order-button">Заказать</div>
-				</div>
-				<div class="dish-card">
-					<img class="dish-img" src="images/dish4.jpg">
-					<p class="dish-title">Название</p>
-					<div class="dish-description">
-						<p class="dish-description">Описание арполл порлд рол рол рпол</p>
-					</div>
-					<p class="dish-cost">568<p>
-					<div class="order-button">Заказать</div>
-				</div>
-				<div class="dish-card">
-					<img class="dish-img" src="images/dish4.jpg">
-					<p class="dish-title">Название</p>
-					<div class="dish-description">
-						<p class="dish-description">Описание арполл порлд рол рол рпол</p>
-					</div>
-					<p class="dish-cost">568<p>
-					<div class="order-button">Заказать</div>
-				</div>
-				</div>
-			</div>		
-	
 
-	<div class="footer">
-		<img class="footer-logo" src="images/logo.png" alt="Малевич">
-		<div>
-			<p class="footer-company">© 2002 - 2018 MALEVICH
-				<br>Все права защищены.
-				<br>
-				<span class="footer-devlabel">Разработка сайта IMAGINARY TURTLES</span>
-			</p>
+			<div id="goods" class="dish-list">
+				<div class="dish-card">
+					<img class="dish-img" src="images/dish4.jpg">
+					<p class="dish-title">Название</p>
+					<div class="dish-description">
+						<p class="dish-description">Описание арполл порлд рол рол рпол</p>
+					</div>
+					<p class="dish-cost">568
+						<p>
+							<div class="order-button">Заказать</div>
+				</div>
+				<div class="dish-card">
+					<img class="dish-img" src="images/dish4.jpg">
+					<p class="dish-title">Название</p>
+					<div class="dish-description">
+						<p class="dish-description">Описание арполл порлд рол рол рпол</p>
+					</div>
+					<p class="dish-cost">568
+						<p>
+							<div class="order-button">Заказать</div>
+				</div>
+				<div class="dish-card">
+					<img class="dish-img" src="images/dish4.jpg">
+					<p class="dish-title">Название</p>
+					<div class="dish-description">
+						<p class="dish-description">Описание арполл порлд рол рол рпол</p>
+					</div>
+					<p class="dish-cost">568
+						<p>
+							<div class="order-button">Заказать</div>
+				</div>
+				<div class="dish-card">
+					<img class="dish-img" src="images/dish4.jpg">
+					<p class="dish-title">Название</p>
+					<div class="dish-description">
+						<p class="dish-description">Описание арполл порлд рол рол рпол</p>
+					</div>
+					<p class="dish-cost">568
+						<p>
+							<div class="order-button">Заказать</div>
+				</div>
+				<div class="dish-card">
+					<img class="dish-img" src="images/dish4.jpg">
+					<p class="dish-title">Название</p>
+					<div class="dish-description">
+						<p class="dish-description">Описание арполл порлд рол рол рпол</p>
+					</div>
+					<p class="dish-cost">568
+						<p>
+							<div class="order-button">Заказать</div>
+				</div>
+			</div>
 		</div>
 
-		<div>
-			<p class="footer-links">Меню</p>
-			<p class="footer-links">Профиль</p>
-		</div>
-		<div>
-			<p class="footer-links">Доставка и оплата</p>
-			<p class="footer-links">Онлайн бронь</p>
-		</div>
-		<div>
-			<p class="footer-links">О нас</p>
-			<p class="footer-links"> </p>
-		</div>
-		<div class="footer-social">
-			<p class="footer-icons">
-				<i class="fab fa-instagram"></i>
-			</p>
-			<p class="footer-icons">
-				<i class="fab fa-facebook-square"></i>
-			</p>
-			<p class="footer-icons">
-				<i class="fab fa-twitter-square"></i>
-			</p>
-			<p class="footer-icons">
-				<i class="fab fa-google-plus-square"></i>
-			</p>
-		</div>
-	</div>
-	</div>
-	<script type="text/javascript" src="js/materialize.min.js"></script>
+		<div class="footer">
+			<a href="about.html">
+				<img class="footer-logo" src="images/logo.png" alt="Малевич">
+			</a>
+			<div>
+				<p class="footer-company">© 2002 - 2018 MALEVICH
+					<br>Все права защищены.
+					<br>
+					<span class="footer-devlabel">Разработка сайта IMAGINARY TURTLES</span>
+				</p>
+			</div>
 
-	<script type="text/javascript" src="js/menu.js"></script>
+			<div>
+				<a href="menu.html">
+					<p class="footer-links">Меню</p>
+				</a>
+				<a href="#">
+					<p class="footer-links">Профиль</p>
+				</a>
+			</div>
+			<div>
+				<a href="info.html">
+					<p class="footer-links">Доставка и оплата</p>
+				</a>
+				<a href="reservation.html">
+					<p class="footer-links">Онлайн бронь</p>
+				</a>
+			</div>
+			<div>
+				<a href="about.html">
+					<p class="footer-links">О нас</p>
+				</a>
+				<p class="footer-links"> </p>
+			</div>
+			<div class="footer-social">
+				<a href="https://www.instagram.com/">
+					<p class="footer-icons">
+						<i class="fab fa-instagram"></i>
+					</p>
+				</a>
+				<a href="https://www.facebook.com/">
+					<p class="footer-icons">
+						<i class="fab fa-facebook-square"></i>
+					</p>
+				</a>
+				<a href="https://twitter.com/">
+					<p class="footer-icons">
+						<i class="fab fa-twitter-square"></i>
+					</p>
+				</a>
+				<a href="https://plus.google.com/discover">
+					<p class="footer-icons">
+						<i class="fab fa-google-plus-square"></i>
+					</p>
+				</a>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script src="js/fixed_header.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
 
 </body>
 

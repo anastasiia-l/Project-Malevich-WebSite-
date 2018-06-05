@@ -27,7 +27,7 @@
     font-style: normal;
     font-size: 28px;
     position: relative;
-    z-index: 10001;
+    
 }
 
 .map{
@@ -53,6 +53,14 @@
     height: 100%;
 }
 
+input {
+    font: none; 
+    font-family: 'Oswald Bold', 'Oswald Regular', 'Oswald';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+}
+
 .date_picker{
     padding: 5px;
     margin-right: 5px;
@@ -63,6 +71,10 @@
     margin-right: 5px;
     position: relative;
 }
+
+::-webkit-inner-spin-button { display: none; }
+::-webkit-calendar-picker-indicator { background: transparent; }
+::-webkit-datetime-edit-fields-wrapper {padding-left: 5px; }
 
 /*From materialize*/
 .timepicker-digital-display{
@@ -80,13 +92,29 @@
 .timepicker-close {
     color: black;
 }
+/*end change in materialize*/
+
+.input_container .pretty-line{
+    padding: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.input_container .pretty-line hr{
+    width: 100%;
+    border: none;
+    background-color: #000000;
+    color: black;
+    height: 1px;
+    opacity: 0.6;
+}
 
 
 
 
-::-webkit-inner-spin-button { display: none; }
-::-webkit-calendar-picker-indicator { background: transparent; }
-::-webkit-datetime-edit-fields-wrapper {padding-left: 5px; }
+
+
 
 
 
