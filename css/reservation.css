@@ -1,0 +1,61 @@
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: auto;
+    background: #000000;
+}
+
+.inputfields{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    width: 300px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    display:block;
+    background: white;
+    margin-left: 100px;
+    margin-top: 20px;
+    box-shadow: 0 0 5px 1px black inset; 
+    font-family: 'Oswald Bold', 'Oswald Regular', 'Oswald';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+}
+
+.map{
+    display:block;
+    position: relative;
+    width: 832px;
+    height: 624px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.caption{
+    display: flex;
+    justify-content: center;
+}
+
+.inputfields .input_container .caption  p{
+    letter-spacing: -1px;
+}
+
+.input_container{
+    padding: 20px;
+    height: 100%;
+}
+
+.date_picker{
+    padding: 5px;
+    margin-right: 5px;
+}
+
+::-webkit-inner-spin-button { display: none; }
+::-webkit-calendar-picker-indicator { background: transparent; }
+::-webkit-datetime-edit-fields-wrapper {padding-left: 5px; }

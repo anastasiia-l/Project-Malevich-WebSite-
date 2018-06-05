@@ -675,8 +675,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         return getSelectSingle_(el);
       case "select-multiple":
         return getSelectMultiple_(el);
-      case "radio":
-        return el.checked ? el.value : null;
+      //case "radio":
+        //return el.checked ? el.value : null;
       case "checkbox":
         return el.checked ? el.value : null;
       default:
@@ -6988,18 +6988,18 @@ $jscomp.polyfill = function (e, r, p, m) {
     }, true);
 
     // Radio and Checkbox focus class
-    var radio_checkbox = 'input[type=radio], input[type=checkbox]';
-    $(document).on('keyup', radio_checkbox, function (e) {
+    //var radio_checkbox = 'input[type=radio], input[type=checkbox]';
+    //$(document).on('keyup', radio_checkbox, function (e) {
       // TAB, check if tabbing to radio or checkbox.
-      if (e.which === M.keys.TAB) {
-        $(this).addClass('tabbed');
-        var $this = $(this);
-        $this.one('blur', function (e) {
-          $(this).removeClass('tabbed');
-        });
-        return;
-      }
-    });
+      //if (e.which === M.keys.TAB) {
+//$(this).addClass('tabbed');
+        //var $this = $(this);
+        //$this.one('blur', function (e) {
+         // $(this).removeClass('tabbed');
+       // });
+       // return;
+      //}
+    //});
 
     var text_area_selector = '.materialize-textarea';
     $(text_area_selector).each(function () {
