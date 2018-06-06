@@ -20,7 +20,7 @@
     background: black;
     color: black;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -28,7 +28,6 @@
     display: flex;
     justify-content: flex-start;
     position: relative;
-    width: 20%;
     height: auto;
 }
 
@@ -53,7 +52,9 @@
 }
 
 .fixed-menu {
-    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 65px;
 }
 
@@ -105,15 +106,14 @@
 
 .fixed-basket {
     height: 65px;
-    width: 24%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Oswald';
     font-weight: 300;
     font-style: normal;
     font-size: 24px;
     color: white;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
 }
 
 .sticky {

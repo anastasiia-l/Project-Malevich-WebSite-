@@ -8839,7 +8839,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 }
 
 .text-primary {
-  color: white;
+  color: red;
 }
 
 /* Clock Digital Display */
@@ -8848,7 +8848,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   -webkit-flex: 1 auto;
       -ms-flex: 1 auto;
           flex: 1 auto;
-  background-color: #26a69a;
+  background-color: black;
   padding: 10px;
   font-weight: 300;
 }

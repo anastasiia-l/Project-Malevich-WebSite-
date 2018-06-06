@@ -27,8 +27,6 @@
     font-style: normal;
     font-size: 28px;
     position: relative;
-    
-    z-index: 10001;
 }
 
 .map{
@@ -67,6 +65,125 @@ input {
     margin-right: 5px;
 }
 
+.time_pick{ 
+    padding: 5px; 
+    margin-right: 5px; 
+    position: relative; 
+} 
+ 
+/*From materialize*/ 
+.timepicker-digital-display{ 
+    background-color: black; 
+} 
+ 
+.timepicker-span-hours, .timepicker-span-minutes, .timepicker-span-am-pm div { 
+    cursor: default; 
+} 
+ 
+.timepicker-span-hours { 
+    color: red; 
+} 
+ 
+.timepicker-close { 
+    color: black; 
+} 
+
+/*end change in materialize*/ 
+ 
+.input_container .pretty-line{ 
+    padding: 5px; 
+    margin-right: 5px; 
+    margin-top: 5px; 
+    margin-left: 8px; 
+} 
+ 
+.input_container .pretty-line hr{ 
+    width: 100%; 
+    border: none; 
+    background-color: #000000; 
+    color: black; 
+    height: 1px; 
+    opacity: 0.6; 
+} 
+
+.input_container .select_free{ 
+    padding: 5px; 
+    margin-top: 10px; 
+    margin-left: 5px; 
+} 
+ 
+.input_container .select_free select{ 
+    font-family: 'Oswald Bold', 'Oswald Regular', 'Oswald'; 
+    font-weight: 700; 
+    font-style: normal; 
+    font-size: 16px; 
+    display: block !important; 
+    width: 100% !important; 
+    border-color: rgb(169, 169, 169); 
+    height: auto; 
+    border-width: 2px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-style: inset;
+    border-top-style: inset;
+    border-right-style: inset;
+    border-bottom-style: inset;
+    border-left-style: inset;
+    border-color: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    /* border-bottom: 1px solid #9e9e9e; */
+    border-radius: 0;
+} 
+
+.comments {
+    padding: 5px; 
+    margin-top: 5px; 
+    margin-left: 5px; 
+    margin-bottom: 10px;
+}
+
+.comments #comments {
+    font-family: 'Oswald Bold', 'Oswald Regular', 'Oswald'; 
+    font-weight: 700; 
+    font-style: normal; 
+    font-size: 16px; 
+    display: block !important; 
+    width: 100% !important; 
+    height: 120px !important;
+    border-width: 2px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-style: inset;
+    border-top-style: inset;
+    border-right-style: inset;
+    border-bottom-style: inset;
+    border-left-style: inset;
+    border-color: initial;
+    border-top-color: initial;
+    border-right-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0;
+    padding-left: 5px;
+}
+
+.phone_number{
+    padding: 5px;  
+    margin-right: 5px;
+}
+
+.phone_number #phone{
+    width: 100%; 
+    height: auto;
+}
 ::-webkit-inner-spin-button { display: none; }
 ::-webkit-calendar-picker-indicator { background: transparent; }
 ::-webkit-datetime-edit-fields-wrapper {padding-left: 5px; }
