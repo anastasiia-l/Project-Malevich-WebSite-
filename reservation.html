@@ -20,7 +20,7 @@
     <!--Import materialize.css-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
 
 </head>
 
@@ -30,7 +30,7 @@
         <div class="firstRow">
             <div class="socIcon">
                 <a href="https://www.instagram.com/">
-                    <i class="fab fa-instagram fa-2x" aria-hidden="true" style="color: red;"></i>
+                    <i class="fab fa-instagram fa-2x" aria-hidden="true" style="color: white;"></i>
                 </a>
                 <a href="https://www.facebook.com/">
                     <i class="fab fa-facebook-square fa-2x" aria-hidden="true" style="color:white ;"></i>
@@ -139,10 +139,10 @@
                         <p>Забронировать стол</p>
                     </div>
                     <div class="date_picker">
-                        <input type="date" name="Дата" id="date" placeholder="Выберите дату" value="" min="">
+                        <input type="date" name="Дата" id="date" placeholder="Выберите дату" value="">
                     </div>
                     <div class="time_pick">
-                        <input type="text" class="timepicker" id="time" name="Время">
+                        <input type="text" class="timepicker" id="time" name="Время" placeholder="Выбрать время" readonly>
                     </div>
                 </div>
             </div>
@@ -279,11 +279,7 @@
         </p>
       </div>
     </div>
-
-    <script>$(document).ready(function(){
-            $('.timepicker').timepicker();
-          });</script>
-
+    <script type="text/javascript" src="js/materialize.js"></script>
     <script src="js/date_picker.js"></script>
     <script src="js/time_picker.js"></script>
 </body>

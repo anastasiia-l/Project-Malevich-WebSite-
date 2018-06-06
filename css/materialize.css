@@ -6123,6 +6123,7 @@ textarea.materialize-textarea {
   font-size: 16px;
   margin: 5px 0px 8px 5px;
   padding: 0;
+  padding-left: 7px;
 /*  -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-box-sizing: content-box;
@@ -8968,7 +8969,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 }
 
 .timepicker-canvas line {
-  stroke: #26a69a;
+  stroke: #a62626;
   stroke-width: 4;
   stroke-linecap: round;
 }
@@ -8979,12 +8980,12 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 
 .timepicker-canvas-bearing {
   stroke: none;
-  fill: #26a69a;
+  fill: #a62626;
 }
 
 .timepicker-canvas-bg {
   stroke: none;
-  fill: #26a69a;
+  fill: #a62626;
 }
 
 /* Footer */

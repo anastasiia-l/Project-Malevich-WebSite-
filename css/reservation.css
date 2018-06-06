@@ -26,6 +26,8 @@
     font-weight: 700;
     font-style: normal;
     font-size: 28px;
+    position: relative;
+    z-index: 10001;
 }
 
 .map{
@@ -56,6 +58,35 @@
     margin-right: 5px;
 }
 
+.time_pick{
+    padding: 5px;
+    margin-right: 5px;
+    position: relative;
+}
+
+/*From materialize*/
+.timepicker-digital-display{
+    background-color: black;
+}
+
+.timepicker-span-hours, .timepicker-span-minutes, .timepicker-span-am-pm div {
+    cursor: default;
+}
+
+.timepicker-span-hours {
+    color: red;
+}
+
+.timepicker-close {
+    color: black;
+}
+
+
+
+
 ::-webkit-inner-spin-button { display: none; }
 ::-webkit-calendar-picker-indicator { background: transparent; }
 ::-webkit-datetime-edit-fields-wrapper {padding-left: 5px; }
+
+
+
