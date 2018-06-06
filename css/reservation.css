@@ -98,7 +98,7 @@ input {
     padding: 5px;
     margin-right: 5px;
     margin-top: 5px;
-    margin-left: 5px;
+    margin-left: 8px;
 }
 
 .input_container .pretty-line hr{
@@ -108,6 +108,25 @@ input {
     color: black;
     height: 1px;
     opacity: 0.6;
+}
+
+.input_container .select_free{
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.input_container .select_free select{
+    font-family: 'Oswald Bold', 'Oswald Regular', 'Oswald';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    display: block !important;
+    width: 100% !important;
+    border-color: rgb(169, 169, 169);
+    height: auto;
+
+
 }
 
 
