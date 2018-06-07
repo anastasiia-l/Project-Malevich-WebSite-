@@ -1,76 +1,149 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 
 <head>
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
 	<link href="css/wrapper.css" rel="stylesheet">
 	<link href="css/header.css" rel="stylesheet">
 	<link href="css/menu.css" rel="stylesheet">
 	<link href="css/footer.css" rel="stylesheet">
+	<link href="css/fixed_header.css" rel="stylesheet">
+	<link href="css/topbutton.css" rel="stylesheet">
+
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-	  crossorigin="anonymous">
+	    crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
-	<!--Import Google Icon Font-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<!--Import materialize.css-->
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 
-	<!--Let browser know website is optimized for mobile-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Меню | MALEVICH ресторан</title>
+	<link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+	
 </head>
 
 <body>
 
-	<header>
-		<div class="firstRow">
-			<div class="socIcon">
-				<a href="https://www.instagram.com/">
-					<i class="fab fa-instagram fa-2x" aria-hidden="true" style="color: red;"></i>
-				</a>
-				<a href="https://www.facebook.com/">
-					<i class="fab fa-facebook-square fa-2x" aria-hidden="true" style="color:white ;"></i>
-				</a>
-				<a href="https://twitter.com/">
-					<i class="fab fa-twitter-square fa-2x" aria-hidden="true" style="color: white;"></i>
-				</a>
-				<a href="https://plus.google.com/discover">
-					<i class="fab fa-google-plus-square fa-2x" aria-hidden="true" style="color: white;"></i>
-				</a>
-			</div>
+<header>
+    <div class="firstRow">
+      <div class="socIcon">
+        <a href="https://www.instagram.com/">
+          <i class="fab fa-instagram fa-2x" aria-hidden="true" style="color: white;"></i>
+        </a>
+        <a href="https://www.facebook.com/">
+          <i class="fab fa-facebook-square fa-2x" aria-hidden="true" style="color:white ;"></i>
+        </a>
+        <a href="https://twitter.com/">
+          <i class="fab fa-twitter-square fa-2x" aria-hidden="true" style="color: white;"></i>
+        </a>
+        <a href="https://plus.google.com/discover">
+          <i class="fab fa-google-plus-square fa-2x" aria-hidden="true" style="color: white;"></i>
+        </a>
+      </div>
 
-			<div class="logo">
-				<a href="aboutUs.html" title="На главную страничку">
+      <div class="logo">
+        <a href="about.html" title="На главную страничку">
+          <span>
+            <span style="color: #ea2727">M</span>ALEVICH</span>
+        </a>
+      </div>
+
+      <div class="ProfileAndBasket">
+        <a class="temp" href="#" title="Войти в кабинет пользователя">
+          <div class="navBtn">
+            <i class="fa fa-user fa-fw" aria-hidden="true"></i>
+            <span>Вход</span>
+          </div>
+
+        </a>
+        <a class="temp" href="#" title="Отобразить карзину">
+          <div class="navBtn">
+            <i class="fa fa-shopping-basket fa-fw" aria-hidden="true"></i>
+            <span>Корзина</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="secondRow" style="z-index: 100;">
+      <div class="nav-menu">
+        <ul class="menu">
+          <li class="menu__list">
+            <a href="menu.html">МЕНЮ
+              <i class="down"></i>
+            </a>
+            <ul>
+              <li>
+                <a href="category.html">Пицца</a>
+              </li>
+              <li>
+                <a href="#">Бургеры</a>
+              </li>
+              <li>
+                <a href="#">Суши</a>
+              </li>
+              <li>
+                <a href="#">Закуски</a>
+              </li>
+              <li>
+                <a href="#">Салаты</a>
+              </li>
+              <li>
+                <a href="#">Паста</a>
+              </li>
+              <li>
+                <a href="#">Десерты</a>
+              </li>
+              <li>
+                <a href="#">Напитки</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="info.html">ДОСТАВКА И ОПЛАТА</a>
+          </li>
+          <li>
+            <a href="reservation.html">ОНЛАЙН БРОНЬ</a>
+          </li>
+          <li class="menu__list">
+            <a href="about.html">О НАС
+              <i class="down"></i>
+            </a>
+            <ul class="dropdown-menu_about">
+              <li>
+                <a href="about.html#kitchen">Кухня</a>
+              </li>
+              <li>
+                <a href="about.html#staff">Шеф-повары</a>
+              </li>
+              <li>
+                <a href="about.html#restaurant">Рестораны</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+	<div class="fixed" style="z-index: 100;">
+		<div class="fixed-block">
+			<div class="fixed-menu-logo">
+				<a href="about.html" title="На главную страничку">
 					<span>
 						<span style="color: red">M</span>ALEVICH</span>
 				</a>
 			</div>
-
-			<div class="ProfileAndBasket">
-				<a class="temp" href="#" title="Войти в кабинет пользователя">
-					<div class="navBtn">
-						<i class="fa fa-user fa-fw" aria-hidden="true"></i>
-						<span>Вход</span>
-					</div>
-
-				</a>
-				<a class="temp" href="#" title="Отобразить карзину">
-					<div class="navBtn">
-						<i class="fa fa-shopping-basket fa-fw" aria-hidden="true"></i>
-						<span>Корзина</span>
-					</div>
-				</a>
-			</div>
-		</div>
-
-		<div class="secondRow" style="z-index: 100;">
-			<div class="nav-menu">
-				<ul class="menu">
+			<div class="fixed-menu">
+				<ul>
 					<li class="menu__list">
-						<a href="#">МЕНЮ
+						<a href="menu.html">МЕНЮ
 							<i class="down"></i>
 						</a>
 						<ul>
 							<li>
-								<a href="#">Пицца</a>
+								<a href="category.html">Пицца</a>
 							</li>
 							<li>
 								<a href="#">Фастфуд</a>
@@ -102,15 +175,15 @@
 						<a href="info.html">ДОСТАВКА И ОПЛАТА</a>
 					</li>
 					<li>
-						<a href="#">ОНЛАЙН БРОНЬ</a>
+						<a href="reservation.html">ОНЛАЙН БРОНЬ</a>
 					</li>
 					<li class="menu__list">
-						<a href="#">О НАС
+						<a href="about.html">О НАС
 							<i class="down"></i>
 						</a>
-						<ul class="dropdown-menu_about">
+						<ul>
 							<li>
-								<a href="#">Кухня</a>
+								<a href="about.html">Кухня</a>
 							</li>
 							<li>
 								<a href="#">Шеф-повары</a>
@@ -122,8 +195,14 @@
 					</li>
 				</ul>
 			</div>
+			<div class="fixed-basket">
+				<div class="fixed-navBtn">
+					<i class="fa fa-shopping-basket fa-fw" aria-hidden="true"></i>
+					<span>Корзина</span>
+				</div>
+			</div>
 		</div>
-	</header>
+	</div>
 
 	<div class="wrapper">
 		<div class="parallax-container">
@@ -174,50 +253,55 @@
 			</div>
 		</div>
 	</div>
-
-	<div class="footer">
-		<img class="footer-logo" src="images/logo.png" alt="Малевич">
-		<div>
-			<p class="footer-company">© 2002 - 2018 MALEVICH
-				<br>Все права защищены.
-				<br>
-				<span class="footer-devlabel">Разработка сайта IMAGINARY TURTLES</span>
-			</p>
-		</div>
-
-		<div>
-			<p class="footer-links">Меню</p>
-			<p class="footer-links">Профиль</p>
-		</div>
-		<div>
-			<p class="footer-links">Доставка и оплата</p>
-			<p class="footer-links">Онлайн бронь</p>
-		</div>
-		<div>
-			<p class="footer-links">О нас</p>
-			<p class="footer-links"> </p>
-		</div>
-		<div class="footer-social">
-			<p class="footer-icons">
-				<i class="fab fa-instagram"></i>
-			</p>
-			<p class="footer-icons">
-				<i class="fab fa-facebook-square"></i>
-			</p>
-			<p class="footer-icons">
-				<i class="fab fa-twitter-square"></i>
-			</p>
-			<p class="footer-icons">
-				<i class="fab fa-google-plus-square"></i>
-			</p>
-		</div>
-	</div>
+ <a href="#" class="scrollup">
+    <i class="fa fa-arrow-circle-up"></i>
+</a>
+	 <div class="footer">
+      <img class="footer-logo" src="images/logo.png" alt="Малевич">
+      <div>
+        <p class="footer-company">© 2002 - 2018 MALEVICH
+          <br>Все права защищены.
+          <br>
+          <span class="footer-devlabel">Разработка сайта IMAGINARY TURTLES</span>
+        </p>
+      </div>
+ 
+     <div>
+        <p class="footer-links"><a href="menu.html">Меню</a></p>
+        <p class="footer-links"><a href="about.html">Профиль</a></p>
+      </div>
+      <div>
+       <p class="footer-links"> <a href="info.html">Доставка и оплата</a></p>
+       <p class="footer-links"> <a href="reservation.html">Онлайн бронь</a></p>
+      </div>
+      <div>
+        <p class="footer-links"><a href="about.html">О нас</a></p>
+        <p class="footer-links"> <a href="#"> </a></p>
+      </div>
+      <div class="footer-social">
+        <p class="footer-icons">
+          <a href="https://www.instagram.com/?hl=ru"><i class="fab fa-instagram"></i></a>
+        </p>
+         <p class="footer-icons">
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+        </p>
+        <p class="footer-icons">
+            <a href="https://www.facebook.com/"><i class="fab fa-twitter-square"></i></a>
+        </p>
+        <p class="footer-icons">
+            <a href="https://www.facebook.com/"><i class="fab fa-google-plus-square"></i></a>
+        </p>
+      </div>
+    </div>
+    
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function () {
 			$('.parallax').parallax();
 		});
 	</script>
+	<script src="js/fixed_header.js"></script>
+	<script type="text/javascript" src="js/topbutton.js"></script>
 
 </body>
 
