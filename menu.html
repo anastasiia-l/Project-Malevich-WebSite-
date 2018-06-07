@@ -9,6 +9,7 @@
 	<link href="css/footer.css" rel="stylesheet">
 	<link href="css/fixed_header.css" rel="stylesheet">
 	<link href="css/topbutton.css" rel="stylesheet">
+	<link href="css/entry.css" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
 	 crossorigin="anonymous">
@@ -16,6 +17,9 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+	<script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>Меню | MALEVICH ресторан</title>
@@ -51,7 +55,7 @@
 
 			<div class="ProfileAndBasket">
 				<a class="temp" href="#" title="Войти в кабинет пользователя">
-					<div class="navBtn">
+					<div class="navBtn"  onclick="PopUpShow()">
 						<i class="fa fa-user fa-fw" aria-hidden="true"></i>
 						<span>Вход</span>
 					</div>
@@ -256,6 +260,101 @@
 	<a href="#" class="scrollup">
 		<i class="fa fa-arrow-circle-up"></i>
 	</a>
+
+	<div class="b-popup" id="popup1">
+		<div class="b-popup-content">
+		  <p>
+			<a class="close-button" href="#" onclick="PopUpHide()">
+			  <i class="fa fa-window-close" aria-hidden="true"></i>
+			</a>
+		  </p>
+		  <h3 class="entry-title">Добро пожаловать в MALEVICH</h3>
+		  <div class="entry-col">
+			<div>
+			  <div class="row">
+				<div class="input-field col s12">
+				  <input class="input-user-data" id="entrylogin" type="email" class="validate">
+				  <label for="entrylogin">Логин или телефон</label>
+				</div>
+			  </div>
+			  <div class="row">
+				<div class="input-field col s12">
+				  <input class="input-user-data" id="entry-password" type="password" class="validate">
+				  <label for="entry-password">Пароль</label>
+				</div>
+			  </div>
+			  <div class="entry-button">ВОЙТИ</div>
+			</div>
+			<div>
+			  <p class="entry-label">Впервые на сайте?</p>
+			  <div class="entry-button" onclick="PopUp2Show(); PopUpHide();">ЗАРЕГЕСТРИРОВАТЬСЯ</div>
+			  <p class="entry-label-desc">После регистрации заказ и брониование - на 25% быстрее</p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="b-popup" id="popup2">
+		<div class="b-popup-content2">
+		  <p>
+			<a class="close-button" href="#" onclick="PopUp2Hide()">
+			  <i class="fa fa-window-close" aria-hidden="true"></i>
+			</a>
+		  </p>
+		  <form id="form">
+			<h3 class="entry-title">Регистрация</h3>
+			<div class="row">
+			  <div class="input-field col s12">
+				<input class="new-input-user-data" id="reglogin" type="text" class="validate" name="reglogin">
+				<label for="reglogin" required="required" aria-required="true">Логин</label>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="input-field col s12">
+				<input class="new-input-user-data" id="regname" type="text" class="validate" name="regname">
+				<label for="regname" required="required" aria-required="true">Имя</label>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="input-field col s12">
+				<input class="new-user-data" id="regtel" type="tel" class="validate" name="regtel">
+				<label for="regtel" required="required" aria-required="true">Номер телефона</label>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="input-field col s12">
+				<input class="new-input-user-data" id="birthdate" type="date" class="datepicker" name="birthdate">
+				<label for="birthdate" class="" required="required" aria-required="true">Дата рождения</label>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="input-field col s12">
+				<input class="new-input-user-data" id="regpassword" type="password" class="validate" name="regpassword">
+				<label for="regpassword" required="required" aria-required="true">Пароль</label>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="input-field col s12">
+				<input class="new-input-user-data" id="confirmpassword" type="password" class="validate" name="confirmpassword">
+				<label for="confirmpassword" required="required" aria-required="true">Подтвердите пароль</label>
+			  </div>
+			</div>
+			<div class="entry-button" onclick="PopUp3Show(); PopUp2Hide(); clearRegForm();">ОТПРАВИТЬ</div>
+		  </form>
+		</div>
+	  </div>
+	
+	  <div class="b-popup" id="popup3">
+		<div class="b-popup-content3">
+		  <p>
+			<a class="close-button" href="#" onclick="PopUp3Hide()">
+			  <i class="fa fa-window-close" aria-hidden="true"></i>
+			</a>
+		  </p>
+		  <h3 class="entry-title">Спасибо за регистрацию</h3>
+		  <p class="entry-label">Подтверждение будет отправлено на указанный телефон в ближайшее время</p>
+		</div>
+	  </div>
+
 	<div class="footer">
 		<img class="footer-logo" src="images/logo.png" alt="Малевич">
 		<div>
@@ -314,7 +413,6 @@
 		</div>
 	</div>
 
-	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function () {
 			$('.parallax').parallax();
@@ -322,6 +420,8 @@
 	</script>
 	<script src="js/fixed_header.js"></script>
 	<script type="text/javascript" src="js/topbutton.js"></script>
+	<script type="text/javascript" src="js/entryform.js"></script>
+	<script type="text/javascript" src="js/registrationform.js"></script>
 
 </body>
 
