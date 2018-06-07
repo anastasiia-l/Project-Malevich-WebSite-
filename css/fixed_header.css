@@ -1,130 +1,135 @@
 .fixed {
-    padding: 0;
-    margin: 0;
-    font-family: 'Oswald Regular', 'Oswald';
-    font-weight: 400;
-    font-style: normal;
-    font-size: 26px;
-    color: white;
-    position: fixed;
-    display: none;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Oswald Regular", "Oswald";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 26px;
+  color: white;
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
 }
 
 .fixed-block {
-    width: 100%;
-    height: 65px;
-    background: black;
-    color: black;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  width: 100%;
+  height: 65px;
+  background: black;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .fixed-menu-logo {
-    display: flex;
-    justify-content: flex-start;
-    position: relative;
-    height: auto;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  height: auto;
 }
 
 .fixed-menu-logo a {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: auto;
-    height: auto;
-    padding-left: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding-left: 20px;
 }
 
 .fixed-menu-logo a span {
-    font-family: 'ADAM.CG PRO';
-    font-weight: 400;
-    font-style: normal;
-    font-size: 40px;
-    color: white;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    user-select: none;
+  font-family: "ADAM.CG PRO";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  color: white;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
 }
 
 .fixed-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
 }
 
-.fixed-menu>ul {
-    height: 65px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    list-style: none;
+.fixed-menu > ul {
+  height: 65px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
 }
 
-.fixed-menu>ul li a {
-    display: block;
-    padding: 10px 30px 10px 30px;
-    color: white;
-    text-decoration: none;
+.fixed-menu > ul li a {
+  display: block;
+  padding: 10px 30px 10px 30px;
+  color: white;
+  text-decoration: none;
 }
 
-.fixed-menu>ul li:last-child a {
-    padding-left: 12px;
+.fixed-menu > ul li:last-child a {
+  padding-left: 12px;
 }
 
 .fixed-menu li ul {
-    width: inherit;
-    background-color: black;
-    position: absolute;
-    display: none;
+  width: inherit;
+  background-color: black;
+  position: absolute;
+  display: none;
 }
 
-.fixed-menu ul li>ul li a {
-    text-align: center;
-    padding: 10px 25px 10px 25px;
-    font-size: 21px;
-    text-transform: none;
+.fixed-menu ul li > ul li a {
+  text-align: center;
+  padding: 10px 25px 10px 25px;
+  font-size: 21px;
+  text-transform: none;
 }
 
-.fixed-menu li>ul li {
-    border: 1px solid black;
+.fixed-menu li > ul li {
+  border: 1px solid black;
 }
 
-.fixed-menu li:hover>ul {
-    display: block;
+.fixed-menu li:hover > ul {
+  display: block;
 }
 
 .fixed-menu li ul a:hover {
-    background: rgba(37, 37, 37, 0.647);
+  background: rgba(37, 37, 37, 0.647);
 }
 
-
 .fixed-basket {
-    height: 65px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Oswald';
-    font-weight: 300;
-    font-style: normal;
-    font-size: 24px;
-    color: white;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oswald";
+  font-weight: 300;
+  font-style: normal;
+  font-size: 24px;
+  color: white;
 }
 
 .sticky {
-    display: block;
-    position: fixed;
-    z-index: 10;
-    -webkit-animation: moveDown .2s;
+  display: block;
+  position: fixed;
+  z-index: 10;
+  -webkit-animation: moveDown 0.2s;
 }
 
 @-webkit-keyframes moveDown {
-    0% {
-        -webkit-transform: translateY(-40px)
-    }
+  0% {
+    -webkit-transform: translateY(-40px);
+  }
+}
+
+@media handheld and (max-width: 480px) {
+  .fixed-menu > ul li a {
+    font-size: 10px;
+  }
 }

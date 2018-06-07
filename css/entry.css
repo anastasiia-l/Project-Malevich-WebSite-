@@ -1,36 +1,35 @@
-
-.b-popup{
-    width:100%;
-    min-height:100%;
-    background-color: rgba(0,0,0,0.5);
-    overflow:hidden;
-    position:fixed;
-    top:0px;
-     z-index: 1000;
+.b-popup {
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
 }
 
-.b-popup .b-popup-content2{
-    margin:40px auto 0px auto;
-    width: 300px;
-    height: 416px;
-    padding:10px;
-    background-color: #ffffff;
-    box-shadow: 0 0 16px #000000;
-    z-index: 1000;
-    padding: 16px;
-    position: relative;
+.b-popup .b-popup-content2 {
+  margin: 40px auto 0px auto;
+  width: 300px;
+  height: 416px;
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 0 16px #000000;
+  z-index: 1000;
+  padding: 16px;
+  position: relative;
 }
 
-.b-popup .b-popup-content{
-    margin:40px auto 0px auto;
-    width: 416px;
-    height: 216px;
-    padding:10px;
-    background-color: #ffffff;
-    box-shadow: 0 0 16px #000000;
-    z-index: 1000;
-    padding: 16px;
-    position: relative;
+.b-popup .b-popup-content {
+  margin: 40px auto 0px auto;
+  width: 416px;
+  height: 216px;
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 0 16px #000000;
+  z-index: 1000;
+  padding: 16px;
+  position: relative;
 }
 
 .entry-col {
@@ -43,7 +42,7 @@
 .input-user-data {
   width: 176px !important;
   font-size: 14px !important;
-  height: 2.3rem !important; 
+  height: 2.3rem !important;
 }
 
 .entry-button {
@@ -56,55 +55,54 @@
   text-align: center;
   padding: 10px 10px;
   text-decoration: none;
-  border-radius: 3px;    
+  border-radius: 3px;
   margin: 8px auto;
   width: 160px;
 }
 
 .entry-button:hover {
-    background: #ea2727;
-    color: white;
+  background: #ea2727;
+  color: white;
 }
 
 .close-button {
-  font-size: 16px; 
+  font-size: 16px;
   color: #ea2727 !important;
-  position:absolute; 
+  position: absolute;
   right: 8px;
   top: 4px;
 }
 
 .input-field {
   position: relative;
-  margin-top: 0px; 
-  margin-bottom: 0; 
+  margin-top: 0px;
+  margin-bottom: 0;
 }
 
 .row {
-    margin-bottom: 4px !important;
+  margin-bottom: 4px !important;
 }
 
 .entry-label {
   font-weight: 400;
-  font-size: 16px;  
+  font-size: 16px;
   text-align: center;
 }
 .entry-title {
-  margin:4px 0px 16px 0px;
+  margin: 4px 0px 16px 0px;
   font-weight: 500;
-  font-size: 24px;  
+  font-size: 24px;
   text-align: center;
 }
 
-.entry-label-desc{
+.entry-label-desc {
   font-weight: 300;
-  font-size: 14px;  
+  font-size: 14px;
   text-align: center;
-
 }
 
 .new-input-user-data {
   width: 248px !important;
   font-size: 14px !important;
-  height: 2.3rem !important; 
+  height: 2.3rem !important;
 }

@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 
 <head>
-	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 
-	<link href="css/header.css" rel="stylesheet">	
-	<link href="css/footer.css" rel="stylesheet">
-	<link href="css/wrapper.css" rel="stylesheet">
-	<link href="css/topbutton.css" rel="stylesheet">
+  <link href="css/header.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+  <link href="css/wrapper.css" rel="stylesheet">
+  <link href="css/topbutton.css" rel="stylesheet">
   <link href="css/profile.css" rel="stylesheet">
 
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-    crossorigin="anonymous"> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-	
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Профиль | MALEVICH ресторан</title>
-	<link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
-   <script>
-    $(document).ready(function(){
-        //Скрыть PopUp при загрузке страницы    
-        PopUpHide();
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Профиль | MALEVICH ресторан</title>
+  <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+  <script>
+    $(document).ready(function () {
+      //Скрыть PopUp при загрузке страницы    
+      PopUpHide();
     });
     //Функция отображения PopUp
-    function PopUpShow(){
-        $("#popup1").show();
+    function PopUpShow() {
+      $("#popup1").show();
     }
     //Функция скрытия PopUp
-    function PopUpHide(){
-        $("#popup1").hide();
+    function PopUpHide() {
+      $("#popup1").hide();
     }
-</script>
+  </script>
 </head>
 
 <body>
 
-	<header>
+  <header>
     <div class="firstRow">
       <div class="socIcon">
         <a href="https://www.instagram.com/">
@@ -139,112 +139,132 @@
     </div>
   </header>
 
-	<div class="wrapper">
-		<div class="content">
+  <div class="wrapper">
+    <div class="content">
       <div class="card">
         <div class="info">
-      <div class="line">
-        <p class="title">Логин</p>
-       
-      </div>
-      <div class="line">
-        <p class="title">Имя</p>
-        
-      </div>
-      <div class="line">
-        <p class="title">Телефон</p>
-        
-      </div>
-      <div class="line">
-        <p class="title">Дата рождения</p>
-        
-      </div>
-     
-			 </div>
-       
+          <div class="line">
+            <p class="title">Логин</p>
+
+          </div>
+          <div class="line">
+            <p class="title">Имя</p>
+
+          </div>
+          <div class="line">
+            <p class="title">Телефон</p>
+
+          </div>
+          <div class="line">
+            <p class="title">Дата рождения</p>
+
+          </div>
+
+        </div>
+
         <div class="info">
-      <div class="line">
-        <p class="data">Логин</p>
-       
+          <div class="line">
+            <p class="data">Логин</p>
+
+          </div>
+          <div class="line">
+            <p class="data">Имя</p>
+
+          </div>
+          <div class="line">
+            <p class="data">Телефон</p>
+
+          </div>
+          <div class="line">
+            <p class="data">Дата рождения</p>
+
+          </div>
+          <div class="button" onclick="PopUpShow()">Изменить пароль</div>
+        </div>
       </div>
-      <div class="line">
-        <p class="data">Имя</p>
-        
-      </div>
-      <div class="line">
-        <p class="data">Телефон</p>
-        
-      </div>
-      <div class="line">
-        <p class="data">Дата рождения</p>
-        
-      </div>
-      <div class="button" onclick="PopUpShow()">Изменить пароль</div>
-       </div>
-       </div>
-      </div>
-		</div>
-    
-	</div>
+    </div>
+  </div>
+
+  </div>
 
   <div class="b-popup" id="popup1">
     <div class="b-popup-content">
       <h3>Смена пароля</h3>
       <p>Введите старый пароль</p>
-        <input class="password" type="password">
-        <p>Новый пароль</p>
-        <input class="password" type="password">
-        <p>Повторите новый пароль</p>
-        <input class="password" type="password">
-        <div class="action-buttons">         
-          <a class="cancel-button" href="javascript:PopUpHide()">Отмена</a>
-          <div class="button" onclick="">Отправить</div>
-        </div>
+      <input class="password" type="password">
+      <p>Новый пароль</p>
+      <input class="password" type="password">
+      <p>Повторите новый пароль</p>
+      <input class="password" type="password">
+      <div class="action-buttons">
+        <a class="cancel-button" href="javascript:PopUpHide()">Отмена</a>
+        <div class="button" onclick="">Отправить</div>
+      </div>
     </div>
-</div>
-	 <a href="#" class="scrollup">
+  </div>
+  <a href="#" class="scrollup">
     <i class="fa fa-arrow-circle-up"></i>
-</a>
-	 <div class="footer">
-      <img class="footer-logo" src="images/logo.png" alt="Малевич">
-      <div>
-        <p class="footer-company">© 2002 - 2018 MALEVICH
-          <br>Все права защищены.
-          <br>
-          <span class="footer-devlabel">Разработка сайта IMAGINARY TURTLES</span>
-        </p>
-      </div>
- 
-     <div>
-        <p class="footer-links"><a href="menu.html">Меню</a></p>
-        <p class="footer-links"><a href="about.html">Профиль</a></p>
-      </div>
-      <div>
-       <p class="footer-links"> <a href="info.html">Доставка и оплата</a></p>
-       <p class="footer-links"> <a href="reservation.html">Онлайн бронь</a></p>
-      </div>
-      <div>
-        <p class="footer-links"><a href="about.html">О нас</a></p>
-        <p class="footer-links"> <a href="#"> </a></p>
-      </div>
-      <div class="footer-social">
-        <p class="footer-icons">
-          <a href="https://www.instagram.com/?hl=ru"><i class="fab fa-instagram"></i></a>
-        </p>
-         <p class="footer-icons">
-          <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-        </p>
-        <p class="footer-icons">
-            <a href="https://www.facebook.com/"><i class="fab fa-twitter-square"></i></a>
-        </p>
-        <p class="footer-icons">
-            <a href="https://www.facebook.com/"><i class="fab fa-google-plus-square"></i></a>
-        </p>
-      </div>
+  </a>
+  <div class="footer">
+    <img class="footer-logo" src="images/logo.png" alt="Малевич">
+    <div>
+      <p class="footer-company">© 2002 - 2018 MALEVICH
+        <br>Все права защищены.
+        <br>
+        <span class="footer-devlabel">Разработка сайта IMAGINARY TURTLES</span>
+      </p>
     </div>
-    <script type="text/javascript" src="js/topbutton.js"></script>
 
-   
+    <div>
+      <p class="footer-links">
+        <a href="menu.html">Меню</a>
+      </p>
+      <p class="footer-links">
+        <a href="about.html">Профиль</a>
+      </p>
+    </div>
+    <div>
+      <p class="footer-links">
+        <a href="info.html">Доставка и оплата</a>
+      </p>
+      <p class="footer-links">
+        <a href="reservation.html">Онлайн бронь</a>
+      </p>
+    </div>
+    <div>
+      <p class="footer-links">
+        <a href="about.html">О нас</a>
+      </p>
+      <p class="footer-links">
+        <a href="#"> </a>
+      </p>
+    </div>
+    <div class="footer-social">
+      <p class="footer-icons">
+        <a href="https://www.instagram.com/?hl=ru">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </p>
+      <p class="footer-icons">
+        <a href="https://www.facebook.com/">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+      </p>
+      <p class="footer-icons">
+        <a href="https://www.facebook.com/">
+          <i class="fab fa-twitter-square"></i>
+        </a>
+      </p>
+      <p class="footer-icons">
+        <a href="https://www.facebook.com/">
+          <i class="fab fa-google-plus-square"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/topbutton.js"></script>
+
+
 
 </body>
 

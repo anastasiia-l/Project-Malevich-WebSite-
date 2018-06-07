@@ -1,47 +1,45 @@
 .card {
-	box-shadow: 0 0 16px #aaa;
-	height: 320px;
-	width: 640px;
-	margin: 40px auto;
-	padding: 64px 0px;
-	display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-     align-items: flex-start;
+  box-shadow: 0 0 16px #aaa;
+  height: 320px;
+  width: 640px;
+  margin: 40px auto;
+  padding: 64px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
   justify-content: center;
 }
 
 .line {
-	 display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .title {
-	  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 600;
-  font-size: 24px;  
+  font-size: 24px;
   text-align: justify;
 }
 .data {
-	font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 200;
-  font-size: 24px;  
-  
+  font-size: 24px;
 }
 .button {
-	cursor: pointer;
-    background: #ffffff;
-    border: 1px solid #ea2727;
-    color: #ea2727;
-    font-size: 12px;
-    line-height: 20px;
-    text-align: center;
-    padding: 10px 30px;
-    text-decoration: none;
-    border-radius: 3px;    
-    margin: 8px 0px;
+  cursor: pointer;
+  background: #ffffff;
+  border: 1px solid #ea2727;
+  color: #ea2727;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  padding: 10px 30px;
+  text-decoration: none;
+  border-radius: 3px;
+  margin: 8px 0px;
 }
 
 .wrapper {
@@ -49,60 +47,60 @@
 }
 
 .button:hover {
-    background: #ea2727;
-    color: white;
+  background: #ea2727;
+  color: white;
 }
 .info {
-	margin: 8px;
+  margin: 8px;
 }
 
-.b-container{
-    width:200px;
-    height:150px;
-    background-color: #ccc;
-    margin:0px auto;
-    padding:10px;
-    font-size:30px;
-    color: #fff;
+.b-container {
+  width: 200px;
+  height: 150px;
+  background-color: #ccc;
+  margin: 0px auto;
+  padding: 10px;
+  font-size: 30px;
+  color: #fff;
 }
-.b-popup{
-    width:100%;
-    min-height:100%;
-    background-color: rgba(0,0,0,0.5);
-    overflow:hidden;
-    position:fixed;
-    top:0px;
-     z-index: 1000;
+.b-popup {
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
 }
-.b-popup .b-popup-content{
-    margin:40px auto 0px auto;
-    width: 344px;
-    height: 348px;
-    padding:10px;
-    background-color: #ffffff;
-    box-shadow: 0 0 16px #000000;
-    z-index: 1000;
-    padding: 16px;
+.b-popup .b-popup-content {
+  margin: 40px auto 0px auto;
+  width: 344px;
+  height: 348px;
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 0 16px #000000;
+  z-index: 1000;
+  padding: 16px;
 }
 
 .action-buttons {
-	display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
- 	justify-content: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
 }
 .cancel-button {
-	color: #ea2727;
-	margin: 8px 16px;
-	font-size: 12px;
+  color: #ea2727;
+  margin: 8px 16px;
+  font-size: 12px;
 }
 .password {
-	width: 312px !important;
+  width: 312px !important;
 }
 h3 {
-	margin:4px 0px 8px 0px;
-	font-weight: 500;
-  font-size: 24px;  
+  margin: 4px 0px 8px 0px;
+  font-weight: 500;
+  font-size: 24px;
   text-align: center;
 }

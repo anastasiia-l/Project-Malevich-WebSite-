@@ -1,141 +1,141 @@
-.mapField{
-    position: relative;
-    width: 832px;
-    height: 624px;
+.mapField {
+  position: relative;
+  width: 832px;
+  height: 624px;
 }
 
-.mapField img{
-    position: absolute;
+.mapField img {
+  position: absolute;
 }
 
-.mapField .radio_buttons{
-    position: absolute;
-    width: inherit;
-    height: inherit;
+.mapField .radio_buttons {
+  position: absolute;
+  width: inherit;
+  height: inherit;
 }
 
-.radio_buttons .table1{
-    position: absolute;
-    top: 195px;
-    left: 226px; 
+.radio_buttons .table1 {
+  position: absolute;
+  top: 195px;
+  left: 226px;
 }
 
-.radio_buttons .table2{
-    position: absolute;
-    top: 228px;
-    left: 111px;
+.radio_buttons .table2 {
+  position: absolute;
+  top: 228px;
+  left: 111px;
 }
 
-.radio_buttons .table3{
-    position: absolute;
-    top: 279px;
-    left: 210px;
+.radio_buttons .table3 {
+  position: absolute;
+  top: 279px;
+  left: 210px;
 }
 
-.radio_buttons .table4{
-    position: absolute;
-    top: 328px;
-    left: 210px;
+.radio_buttons .table4 {
+  position: absolute;
+  top: 328px;
+  left: 210px;
 }
 
-.radio_buttons .table5{
-    position: absolute;
-    top: 375px;
-    left: 210px;
+.radio_buttons .table5 {
+  position: absolute;
+  top: 375px;
+  left: 210px;
 }
 
-.radio_buttons .table6{
-    position: absolute;
-    top: 334px;
-    left: 111px;
+.radio_buttons .table6 {
+  position: absolute;
+  top: 334px;
+  left: 111px;
 }
 
-.radio_buttons .table7{
-    position: absolute;
-    top: 432px;
-    left: 111px;
+.radio_buttons .table7 {
+  position: absolute;
+  top: 432px;
+  left: 111px;
 }
 
-.radio_buttons .table8{
-    position: absolute;
-    top: 455px;
-    left: 223px;
+.radio_buttons .table8 {
+  position: absolute;
+  top: 455px;
+  left: 223px;
 }
 
-.radio_buttons .table9{
-    position: absolute;
-    top: 264px;
-    left: 405px;
+.radio_buttons .table9 {
+  position: absolute;
+  top: 264px;
+  left: 405px;
 }
 
-.radio_buttons .table10{
-    position: absolute;
-    top: 327px;
-    left: 405px;
+.radio_buttons .table10 {
+  position: absolute;
+  top: 327px;
+  left: 405px;
 }
 
-.radio_buttons .table11{
-    position: absolute;
-    top: 252px;
-    left: 490px;
+.radio_buttons .table11 {
+  position: absolute;
+  top: 252px;
+  left: 490px;
 }
 
-.radio_buttons .table12{
-    position: absolute;
-    top: 328px;
-    left: 490px;
+.radio_buttons .table12 {
+  position: absolute;
+  top: 328px;
+  left: 490px;
 }
 
-.radio_buttons .table13{
-    position: absolute;
-    top: 265px;
-    left: 575px;
+.radio_buttons .table13 {
+  position: absolute;
+  top: 265px;
+  left: 575px;
 }
 
-.radio_buttons .table14{
-    position: absolute;
-    top: 327px;
-    left: 575px;
+.radio_buttons .table14 {
+  position: absolute;
+  top: 327px;
+  left: 575px;
 }
 
-.radio_buttons .table15{
-    position: absolute;
-    top: 265px;
-    left: 629px;
+.radio_buttons .table15 {
+  position: absolute;
+  top: 265px;
+  left: 629px;
 }
 
-.radio_buttons .table16{
-    position: absolute;
-    top: 328px;
-    left: 629px;
+.radio_buttons .table16 {
+  position: absolute;
+  top: 328px;
+  left: 629px;
 }
 
-.radio_buttons .table17{
-    position: absolute;
-    top: 218px;
-    left: 715px;
+.radio_buttons .table17 {
+  position: absolute;
+  top: 218px;
+  left: 715px;
 }
 
-.radio_buttons .table18{
-    position: absolute;
-    top: 308px;
-    left: 715px;
+.radio_buttons .table18 {
+  position: absolute;
+  top: 308px;
+  left: 715px;
 }
 
-.radio_buttons .table19{
-    position: absolute;
-    top: 399px;
-    left: 715px;
+.radio_buttons .table19 {
+  position: absolute;
+  top: 399px;
+  left: 715px;
 }
 
-.radio_buttons .table20{
-    position: absolute;
-    top: 524px;
-    left: 698px;
+.radio_buttons .table20 {
+  position: absolute;
+  top: 524px;
+  left: 698px;
 }
 
-.radio_buttons .table21{
-    position: absolute;
-    top: 524px;
-    left: 592px;
+.radio_buttons .table21 {
+  position: absolute;
+  top: 524px;
+  left: 592px;
 }

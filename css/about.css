@@ -1,127 +1,125 @@
 .section-block {
-	z-index: 90;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	margin: 32px;
+  z-index: 90;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 32px;
 }
 
 .section-title {
- 	display: flex;
- 	flex-direction: row;
- 	align-items: center;
- 	justify-content: center;;
-	border-width: 0pt;
-	background-color: #000000;
-	width: 172px;
-	height: 172px;
-	border-radius: 8px  0px 0px 8px;
-	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
-	z-index: 2;
-	box-sizing: content-box !important;
-	 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-width: 0pt;
+  background-color: #000000;
+  width: 172px;
+  height: 172px;
+  border-radius: 8px 0px 0px 8px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  box-sizing: content-box !important;
 }
-.section-title-label, .letter {
-	font-family: 'Oswald', sans-serif;
-	font-weight: bold;
-	font-size: 32px;	
-	color: white;
-	text-align: right;
+.section-title-label,
+.letter {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  color: white;
+  text-align: right;
 }
 
-.letter { 
-     color: #ea2727; 
-    }
+.letter {
+  color: #ea2727;
+}
 .section-description {
-	padding: 32px 32px 32px 32px;
-	border-width: 0px;
-	background-color: #ffffff;
-	width: 664px;
-	height: 108px;
-	border-radius: 0px 8px 8px 0px;
-	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
-	overflow: auto;
-	box-sizing: content-box !important;
+  padding: 32px 32px 32px 32px;
+  border-width: 0px;
+  background-color: #ffffff;
+  width: 664px;
+  height: 108px;
+  border-radius: 0px 8px 8px 0px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  overflow: auto;
+  box-sizing: content-box !important;
 }
 
 .section-text {
-	font-family: 'Oswald', sans-serif;
-	font-weight: 400;
-	font-size: 18px;	
-	color: black;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: black;
 }
 
 .kitcheners {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .content-kitchener-block {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;	
-	position:  relative; 
-	margin: 56px 0px 0px 0px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  margin: 56px 0px 0px 0px;
 }
 
 .kitchener-description {
-	z-index: 1;
-	padding: 92px 32px 16px 32px;
-	border-width: 0px;
-	background-color: #000000;
-	width: 224px;
-	height: 168px;
-	border-radius: 8px;
-	box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
-	margin: 8px;
-	box-sizing: content-box !important;
+  z-index: 1;
+  padding: 92px 32px 16px 32px;
+  border-width: 0px;
+  background-color: #000000;
+  width: 224px;
+  height: 168px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  box-sizing: content-box !important;
 }
 
-
 .kitchener-image {
-	position: absolute;
-	top: -56px;
-	left: 24.6%;
-	z-index:2;
-	width: 152px;
-	height: 152px;
-	object-fit: cover;
-	border-radius: 100%;
-	box-shadow: 2px 1px 1px 1px rgba(0,0,0,0.2);
-	box-sizing: content-box !important;
+  position: absolute;
+  top: -56px;
+  left: 24.6%;
+  z-index: 2;
+  width: 152px;
+  height: 152px;
+  object-fit: cover;
+  border-radius: 100%;
+  box-shadow: 2px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  box-sizing: content-box !important;
 }
 
 .kitchener-citation {
-	font-family: 'Oswald', sans-serif;
-	font-weight: 200;
-	font-size: 17px;	
-	color: white;
-	margin: auto;
-	text-align: justify;
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  font-size: 17px;
+  color: white;
+  margin: auto;
+  text-align: justify;
 }
 
-.dish-items{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
+.dish-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .dish-item {
-	margin: 8px;
+  margin: 8px;
 }
-.dish-image {	
-	width: 212px;
-	height: 212px;
-	object-fit: cover;
-	box-sizing: content-box !important;
+.dish-image {
+  width: 212px;
+  height: 212px;
+  object-fit: cover;
+  box-sizing: content-box !important;
 }
 
 .map {
-	height:400px;
-	border:0; 
-	width: 100%;
-	box-sizing: content-box !important;
+  height: 400px;
+  border: 0;
+  width: 100%;
+  box-sizing: content-box !important;
 }

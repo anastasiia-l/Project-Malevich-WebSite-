@@ -1,60 +1,60 @@
 <!DOCTYPE html>
 
 <head>
-	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
 
-	<link href="css/header.css" rel="stylesheet">	
-	<link href="css/footer.css" rel="stylesheet">
-	<link href="css/wrapper.css" rel="stylesheet">
-	<link href="css/topbutton.css" rel="stylesheet">
+  <link href="css/header.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+  <link href="css/wrapper.css" rel="stylesheet">
+  <link href="css/topbutton.css" rel="stylesheet">
   <link href="css/entry.css" rel="stylesheet">
 
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-    crossorigin="anonymous"> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+    crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-	
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Профиль | MALEVICH ресторан</title>
-	<link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
-   <script>
-    $(document).ready(function(){
-        //Скрыть PopUp при загрузке страницы    
-        PopUpHide();
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Профиль | MALEVICH ресторан</title>
+  <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+  <script>
+    $(document).ready(function () {
+      //Скрыть PopUp при загрузке страницы    
+      PopUpHide();
     });
     //Функция отображения PopUp
-    function PopUpShow(){
-        $("#popup1").show();
+    function PopUpShow() {
+      $("#popup1").show();
     }
     //Функция скрытия PopUp
-    function PopUpHide(){
-        $("#popup1").hide();
+    function PopUpHide() {
+      $("#popup1").hide();
     }
 
 
-</script>
+  </script>
 
-<script>
-    $(document).ready(function(){
-        //Скрыть PopUp при загрузке страницы    
-        PopUp2Hide();
+  <script>
+    $(document).ready(function () {
+      //Скрыть PopUp при загрузке страницы    
+      PopUp2Hide();
     });
     //Функция отображения PopUp
-    function PopUp2Show(){
-        $("#popup2").show();
+    function PopUp2Show() {
+      $("#popup2").show();
     }
     //Функция скрытия PopUp
-    function PopUp2Hide(){
-        $("#popup2").hide();
+    function PopUp2Hide() {
+      $("#popup2").hide();
     }
-</script>
+  </script>
 </head>
 
 <body>
 
-	<header>
+  <header>
     <div class="firstRow">
       <div class="socIcon">
         <a href="https://www.instagram.com/">
@@ -156,189 +156,211 @@
     </div>
   </header>
 
-	<div class="wrapper">
-		<div class="content">
+  <div class="wrapper">
+    <div class="content">
       <div class="card">
         <div class="info">
-      <div class="line">
-        <p class="title">Логин</p>
-       
-      </div>
-      <div class="line">
-        <p class="title">Имя</p>
-        
-      </div>
-      <div class="line">
-        <p class="title">Телефон</p>
-        
-      </div>
-      <div class="line">
-        <p class="title">Дата рождения</p>
-        
-      </div>
-     
-			 </div>
-       
+          <div class="line">
+            <p class="title">Логин</p>
+
+          </div>
+          <div class="line">
+            <p class="title">Имя</p>
+
+          </div>
+          <div class="line">
+            <p class="title">Телефон</p>
+
+          </div>
+          <div class="line">
+            <p class="title">Дата рождения</p>
+
+          </div>
+
+        </div>
+
         <div class="info">
-      <div class="line">
-        <p class="data">Логин</p>
-       
+          <div class="line">
+            <p class="data">Логин</p>
+
+          </div>
+          <div class="line">
+            <p class="data">Имя</p>
+
+          </div>
+          <div class="line">
+            <p class="data">Телефон</p>
+
+          </div>
+          <div class="line">
+            <p class="data">Дата рождения</p>
+
+          </div>
+          <div class="button" onclick="PopUpShow()">Изменить пароль</div>
+        </div>
       </div>
-      <div class="line">
-        <p class="data">Имя</p>
-        
-      </div>
-      <div class="line">
-        <p class="data">Телефон</p>
-        
-      </div>
-      <div class="line">
-        <p class="data">Дата рождения</p>
-        
-      </div>
-      <div class="button" onclick="PopUpShow()">Изменить пароль</div>
-       </div>
-       </div>
-      </div>
-		</div>
-    
-	</div>
+    </div>
+  </div>
+
+  </div>
 
   <div class="b-popup" id="popup1">
     <div class="b-popup-content">
-      <p >
-          <a class="close-button" href="#" onclick="PopUpHide()"><i class="fa fa-window-close" aria-hidden="true"></i></a>
-        </p>
+      <p>
+        <a class="close-button" href="#" onclick="PopUpHide()">
+          <i class="fa fa-window-close" aria-hidden="true"></i>
+        </a>
+      </p>
       <h3 class="entry-title">Добро пожаловать в MALEVICH</h3>
       <div class="entry-col">
         <div>
           <div class="row">
-        <div class="input-field col s12">
-          <input class = "input-user-data" id="email" type="email" class="validate">
-          <label for="email">Логин или телефон</label>
+            <div class="input-field col s12">
+              <input class="input-user-data" id="email" type="email" class="validate">
+              <label for="email">Логин или телефон</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input class="input-user-data" id="password" type="password" class="validate">
+              <label for="password">Пароль</label>
+            </div>
+          </div>
+          <div class="entry-button">ВОЙТИ</div>
         </div>
-      </div>
-        <div class="row">
-        <div class="input-field col s12">
-          <input class = "input-user-data" id="password" type="password" class="validate">
-          <label for="password">Пароль</label>
-        </div>
-      </div>
-      <div class="entry-button">ВОЙТИ</div>
-      </div>
         <div>
           <p class="entry-label">Впервые на сайте?</p>
           <div class="entry-button" onclick="PopUp2Show()">ЗАРЕГЕСТРИРОВАТЬСЯ</div>
           <p class="entry-label-desc">После регистрации заказ и брониование - на 25% быстрее</p>
         </div>
-        
-      </div>   
-    </div>
-</div>
 
- <div class="b-popup" id="popup2">
+      </div>
+    </div>
+  </div>
+
+  <div class="b-popup" id="popup2">
     <div class="b-popup-content2">
-         <p>
-          <a class="close-button" href="#" onclick="PopUp2Hide()"><i class="fa fa-window-close" aria-hidden="true"></i></a>
-        </p>
-          <h3 class="entry-title">Регистрация</h3>
-          <div class="row">
-            <div class="input-field col s12">
-              <input class = "new-input-user-data" id="email" type="email" class="validate">
-              <label for="email">Логин</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input class = "new-input-user-data" id="email" type="email" class="validate">
-              <label for="email">Имя</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input class = "new-user-data" id="email" type="email" class="validate">
-              <label for="email">Номер телефона</label>
-            </div>
-          </div>
-          <div class="row">
+      <p>
+        <a class="close-button" href="#" onclick="PopUp2Hide()">
+          <i class="fa fa-window-close" aria-hidden="true"></i>
+        </a>
+      </p>
+      <h3 class="entry-title">Регистрация</h3>
+      <div class="row">
         <div class="input-field col s12">
-          <input class = "new-input-user-data" id="birthdate" type="text" class="datepicker">
+          <input class="new-input-user-data" id="email" type="email" class="validate">
+          <label for="email">Логин</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input class="new-input-user-data" id="email" type="email" class="validate">
+          <label for="email">Имя</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input class="new-user-data" id="email" type="email" class="validate">
+          <label for="email">Номер телефона</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input class="new-input-user-data" id="birthdate" type="text" class="datepicker">
           <label for="birthdate" class="">Дата рождения</label>
-          </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input class = "new-input-user-data" id="password" type="password" class="validate">
-              <label for="password">Пароль</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="input-field col s12">
-              <input class = "new-input-user-data" id="password" type="password" class="validate">
-              <label for="password">Подтвердите пароль</label>
-            </div>
-          </div>
-          <div class="entry-button">ОТПРАВИТЬ</div>     
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input class="new-input-user-data" id="password" type="password" class="validate">
+          <label for="password">Пароль</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input class="new-input-user-data" id="password" type="password" class="validate">
+          <label for="password">Подтвердите пароль</label>
+        </div>
+      </div>
+      <div class="entry-button">ОТПРАВИТЬ</div>
     </div>
-</div>
+  </div>
 
 
 
 
-	 <a href="#" class="scrollup">
+  <a href="#" class="scrollup">
     <i class="fa fa-arrow-circle-up"></i>
-</a>
-	 <div class="footer">
-      <img class="footer-logo" src="images/logo.png" alt="Малевич">
-      <div>
-        <p class="footer-company">© 2002 - 2018 MALEVICH
-          <br>Все права защищены.
-          <br>
-          <span class="footer-devlabel">Разработка сайта IMAGINARY TURTLES</span>
-        </p>
-      </div>
- 
-     <div>
-        <p class="footer-links"><a href="menu.html">Меню</a></p>
-        <p class="footer-links"><a href="about.html">Профиль</a></p>
-      </div>
-      <div>
-       <p class="footer-links"> <a href="info.html">Доставка и оплата</a></p>
-       <p class="footer-links"> <a href="reservation.html">Онлайн бронь</a></p>
-      </div>
-      <div>
-        <p class="footer-links"><a href="about.html">О нас</a></p>
-        <p class="footer-links"> <a href="#"> </a></p>
-      </div>
-      <div class="footer-social">
-        <p class="footer-icons">
-          <a href="https://www.instagram.com/?hl=ru"><i class="fab fa-instagram"></i></a>
-        </p>
-         <p class="footer-icons">
-          <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-        </p>
-        <p class="footer-icons">
-            <a href="https://www.facebook.com/"><i class="fab fa-twitter-square"></i></a>
-        </p>
-        <p class="footer-icons">
-            <a href="https://www.facebook.com/"><i class="fab fa-google-plus-square"></i></a>
-        </p>
-      </div>
+  </a>
+  <div class="footer">
+    <img class="footer-logo" src="images/logo.png" alt="Малевич">
+    <div>
+      <p class="footer-company">© 2002 - 2018 MALEVICH
+        <br>Все права защищены.
+        <br>
+        <span class="footer-devlabel">Разработка сайта IMAGINARY TURTLES</span>
+      </p>
     </div>
-     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/topbutton.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-      M.updateTextFields();
-      });
-    </script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-    $('.datepicker').datepicker();
-     });          
-    </script>
 
-   
+    <div>
+      <p class="footer-links">
+        <a href="menu.html">Меню</a>
+      </p>
+      <p class="footer-links">
+        <a href="about.html">Профиль</a>
+      </p>
+    </div>
+    <div>
+      <p class="footer-links">
+        <a href="info.html">Доставка и оплата</a>
+      </p>
+      <p class="footer-links">
+        <a href="reservation.html">Онлайн бронь</a>
+      </p>
+    </div>
+    <div>
+      <p class="footer-links">
+        <a href="about.html">О нас</a>
+      </p>
+      <p class="footer-links">
+        <a href="#"> </a>
+      </p>
+    </div>
+    <div class="footer-social">
+      <p class="footer-icons">
+        <a href="https://www.instagram.com/?hl=ru">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </p>
+      <p class="footer-icons">
+        <a href="https://www.facebook.com/">
+          <i class="fab fa-facebook-square"></i>
+        </a>
+      </p>
+      <p class="footer-icons">
+        <a href="https://www.facebook.com/">
+          <i class="fab fa-twitter-square"></i>
+        </a>
+      </p>
+      <p class="footer-icons">
+        <a href="https://www.facebook.com/">
+          <i class="fab fa-google-plus-square"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/topbutton.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      M.updateTextFields();
+    });
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.datepicker').datepicker();
+    });          
+  </script>
 
 </body>
 

@@ -1,44 +1,50 @@
-$('document').ready(function(){
-	loadGoods();
+$("document").ready(function() {
+  loadGoods();
 });
 
 function loadGoods() {
-var requestOpenSession = "https://malevich-server.herokuapp.com/session/start";
+  var requestOpenSession =
+    "https://malevich-server.herokuapp.com/session/start";
 
-var request = new XMLHttpRequest();
-request.responseType = 'text';
-request.open('GET', requestOpenSession);
+  var request = new XMLHttpRequest();
+  request.responseType = "text";
+  request.open("GET", requestOpenSession);
 
-request.send();
-console.log(request.response);
+  request.send();
+  console.log(request.response);
 
-var requestMenuURL = 'https://malevich-server.herokuapp.com/menu/all';
+  var requestMenuURL = "https://malevich-server.herokuapp.com/menu/all";
 
-var requestMenu = new XMLHttpRequest();
-requestMenu.responseType = 'json';
-requestMenu.withCredentials = true;
-requestMenu.open('GET', requestMenuURL);
-requestMenu.send();
+  var requestMenu = new XMLHttpRequest();
+  requestMenu.responseType = "json";
+  requestMenu.withCredentials = true;
+  requestMenu.open("GET", requestMenuURL);
+  requestMenu.send();
 
-requestMenu.onload = function() {
-  var dishList = requestMenu.response;
-  console.log(dishList);
-  parseDishList(dishList); 
-	}
+  requestMenu.onload = function() {
+    var dishList = requestMenu.response;
+    console.log(dishList);
+    parseDishList(dishList);
+  };
 }
 
 function parseDishList(jsonObj) {
-	var out = '';
-	for (var key in jsonObj) {
-		out += '<div class="dish-card">' + '<img class="dish-img" src="' + jsonObj[key]['imageURL'] + '">';
-		out += '<p class="dish-title">' + jsonObj[key]['name'] + '</p>';
-		out += '<div class="dish-description"><p class="dish-description">' + jsonObj[key]['description'] + '</p></div>';
-		out += '<p class="dish-cost">' + jsonObj[key]['price'] + '<p>';
-		out += '<div class="order-button">Заказать</div></div>';
-
-	}
-  	$('#goods').html(out);		
-				
+  var out = "";
+  for (var key in jsonObj) {
+    out +=
+      '<div class="dish-card">' +
+      '<img class="dish-img" src="' +
+      jsonObj[key]["imageURL"] +
+      '">';
+    out += '<p class="dish-title">' + jsonObj[key]["name"] + "</p>";
+    out +=
+      '<div class="dish-description"><p class="dish-description">' +
+      jsonObj[key]["description"] +
+      "</p></div>";
+    out += '<p class="dish-cost">' + jsonObj[key]["price"] + "<p>";
+    out += '<div class="order-button">Заказать</div></div>';
+  }
+  $("#goods").html(out);
 }
 
 function setCookie(name, value, options) {
