@@ -3,7 +3,7 @@ $("document").ready(function() {
 });
 
 function loadGoods() {
-  var requestOpenSession =
+  /*var requestOpenSession =
     "https://malevich-server.herokuapp.com/session/start";
 
   var request = new XMLHttpRequest();
@@ -26,6 +26,12 @@ function loadGoods() {
     console.log(dishList);
     parseDishList(dishList);
   };
+  */
+ $.getJSON("js/menu.json", function(json) {
+      console.log(json); 
+      parseDishList(json);
+  });
+
 }
 
 function parseDishList(jsonObj) {
@@ -38,15 +44,15 @@ function parseDishList(jsonObj) {
       '">';
     out += '<p class="dish-title">' + jsonObj[key]["name"] + "</p>";
     out +=
-      '<div class="dish-description"><p class="dish-description">' +
+      '<div class="dish-description">' +
       jsonObj[key]["description"] +
-      "</p></div>";
-    out += '<p class="dish-cost">' + jsonObj[key]["price"] + "<p>";
+      "</div>";
+    out += '<p class="dish-cost">' + jsonObj[key]["price"] + " ₴</p>";
     out += '<div class="order-button">Заказать</div></div>';
   }
   $("#goods").html(out);
 }
-
+/*
 function setCookie(name, value, options) {
   options = options || {};
 
@@ -75,3 +81,4 @@ function setCookie(name, value, options) {
 
   document.cookie = updatedCookie;
 }
+*/

@@ -78,6 +78,13 @@ select {
   justify-content: center;
 }
 
+.dish-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
 .dish-img {
   width: 296px;
   height: 176px;
@@ -125,8 +132,8 @@ select {
 .dish-title {
   font-family: "Oswald", sans-serif;
   font-weight: 600;
-  font-size: 24px;
-  text-align: justify;
+  font-size: 21px;
+ 
 }
 
 .dish-cost {
