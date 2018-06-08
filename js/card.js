@@ -41,67 +41,54 @@ function deleteCookie(name) {
         expires: -1
     })
 }
-// deleteCookie("order");
-console.log(get_cookie("order"));
 
+console.log(getJsonArrayFromCoockie());
+// deleteCookie("order");
+// console.log(get_cookie("order"));
 function addToBasket(id, quantity) {
     $('#button_' + id).attr("disabled", true);
     $('#button_' + id).attr('onclick', '').unbind('click');
     var date = new Date();
     var time = date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
+    var dish = [id,quantity,time,'comment'];
     if (get_cookie("order") == null) {
-
-        var dish = [{
-            "dish": {"id": '+id+'},
-            "quantity": '+quantity+',
-            "time": "'+time+'",
-            "comment": "comment"
-        }];
-
-        setCookie("order", dish);
-        console.log(get_cookie("order"));
-        $('#button_' + id).attr("disabled", true);
+        var arrdish = [];
+        arrdish[0] = dish;
+        setCookie("order", JSON.stringify(arrdish));
     } else {
-
         var order_dishes = get_cookie("order");
-        var dish = {
-            "dish": {"id": '+id+'},
-            "quantity": '+quantity+',
-            "time": "'+time +'",
-            "comment": "comment"
-        };
-        order_dishes.push(dish);
-        setCookie("order", order_dishes);
-        console.log(order_dishes);
+        var storedAry = JSON.parse(order_dishes);
+        storedAry.push(dish);
+        setCookie("order", JSON.stringify(storedAry));
 
     }
 }
 
 function delete_from_basket(item_id) {
     $('#item_' + item_id).remove();
-    var order_dishes = '[' + get_cookie("order") + ']';
+    var order_dishes = get_cookie("order");
     order_dishes = JSON.parse(order_dishes);
-    console.log(order_dishes);
     for (let x = 0; x < order_dishes.length; x++) {
         if (item_id == x) {
             order_dishes.splice(item_id, 1);
         }
     }
-    order_dishes = JSON.stringify(order_dishes);
-    order_dishes = order_dishes.substr(1);
-    order_dishes = order_dishes.substr(0, -1);
-    console.log(order_dishes);
-    setCookie("order", order_dishes);
-    console.log(order_dishes);
-
+    setCookie("order", JSON.stringify(order_dishes));
 }
-
-$(document).ready(function () {
-    console.log(get_cookie("order"));
-    var order_dishes = '[' + get_cookie("order") + ']';
+function getJsonArrayFromCoockie(){
+    var order_dishes = get_cookie("order");
     order_dishes = JSON.parse(order_dishes);
-
-    // alert(order_dishes);
+    var jsonstr = '';
+    for (let x = 0; x < order_dishes.length; x++) {
+        var item = ',{"dish":{"id":'+order_dishes[x][0]+'},"quntity":'+order_dishes[x][1]+',"time":'+order_dishes[x][2]+',"comment":'+order_dishes[x][3]+'}'
+        jsonstr += item;
+    }
+    return jsonstr.substr(1);
+}
+$(document).ready(function () {
+   
+    var order_dishes = get_cookie("order");
+    order_dishes = JSON.parse(order_dishes);
     for (let x = 0; x < order_dishes.length; x++) {
         var basket =
             '<tr id="item_' + x + '"><td><div class="Item_Image"><img src="#" alt="Фото"></div>	</td>' +
