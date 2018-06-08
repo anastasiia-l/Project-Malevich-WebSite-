@@ -48,7 +48,7 @@ function parseDishList(jsonObj) {
       jsonObj[key]["description"] +
       "</div>";
     out += '<p class="dish-cost">' + jsonObj[key]["price"] + " ₴</p>";
-    out += '<div class="order-button">Заказать</div></div>';
+    out += '<div class="order-button"  >Заказать</div></div>';
   }
   $("#goods").html(out);
 }
