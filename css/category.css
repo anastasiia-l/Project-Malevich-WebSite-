@@ -113,6 +113,7 @@ select {
 }
 .dish-card {
   padding: 16px;
+  cursor: pointer;
 }
 
 .dish-card:hover {
@@ -133,7 +134,7 @@ select {
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   font-size: 21px;
- 
+  line-height: 1;
 }
 
 .dish-cost {
@@ -144,6 +145,9 @@ select {
   position: absolute;
   bottom: 48px;
 }
+select {
+  font-family: "Oswald", sans-serif;
+}
 
 .dish-card:hover > .dish-title {
   color: #ea2727;
@@ -153,10 +157,10 @@ select {
   content: "";
   display: block;
   position: absolute;
-  bottom: 80px;
+  bottom: 95px;
   right: 0;
   left: 0;
-  height: 25px;
+  height: 28px;
   background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, #fff 100%);
   background: -webkit-gradient(
     linear,

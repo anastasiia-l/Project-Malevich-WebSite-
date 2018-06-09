@@ -41,10 +41,10 @@ function parseDishList(jsonObj) {
       '<div class="dish-card">' +
       '<img class="dish-img" src="' +
       jsonObj[key]["imageURL"] +
-      '">';
-    out += '<p class="dish-title">' + jsonObj[key]["name"] + "</p>";
+      '"onclick="PopUpDishCardShow()">';
+    out += '<p class="dish-title" onclick="PopUpDishCardShow()">' + jsonObj[key]["name"] + "</p>";
     out +=
-      '<div class="dish-description">' +
+      '<div class="dish-description" onclick="PopUpDishCardShow()">' +
       jsonObj[key]["description"] +
       "</div>";
     out += '<p class="dish-cost">' + jsonObj[key]["price"] + " ₴</p>";
