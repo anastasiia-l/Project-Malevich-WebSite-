@@ -59,7 +59,7 @@
 
       <div class="ProfileAndBasket">
         <a class="temp" href="#" title="Войти в кабинет пользователя">
-          <div class="navBtn"  onclick="PopUpShow()">
+          <div class="navBtn" onclick="PopUpShow()">
             <i class="fa fa-user fa-fw" aria-hidden="true"></i>
             <span>Вход</span>
           </div>
@@ -167,7 +167,12 @@
             <hr>
           </div>
           <div class="phone_number">
-            <input type="tel" name="Телефон" id="phone" maxlength="13" value="+380">
+            <input type="tel" name="Телефон" id="phone" maxlength="13" value="" placeholder="Номер телефона" onclick="showSample()">
+          </div>
+          <div class="enter_to_profile">
+            <p>или
+              <a>Войти в профиль</a>
+            </p>
           </div>
         </div>
       </div>
@@ -262,7 +267,6 @@
               <input class="rb" type="radio" name="option" id="radio21" />
               <label for="radio21">21</label>
             </div>
-
           </div>
         </div>
       </div>
@@ -429,6 +433,7 @@
   <script type="text/javascript" src="js/topbutton.js"></script>
   <script type="text/javascript" src="js/entryform.js"></script>
   <script type="text/javascript" src="js/registrationform.js"></script>
+  <script type="text/javascript" src="js/reservation.js"></script>
 
 </body>
 
