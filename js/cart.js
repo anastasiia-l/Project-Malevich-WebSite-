@@ -55,7 +55,7 @@ function deleteCookie(name) {
 
 console.log(getJsonArrayFromCoockie());
 // deleteCookie("order");
-// console.log(get_cookie("order"));
+console.log(get_cookie("order"));
 function addToBasket(id, quantity) {
     $('#button_' + id).attr("disabled", true);
     $('#button_' + id).attr('onclick', '').unbind('click');
@@ -67,7 +67,7 @@ function addToBasket(id, quantity) {
             '<div class="cart-col">' +
             '<div class="delete-dish"><a onclick="delete_from_basket(' + i + ')"><i class="fas fa-times"></i></a></div>' +
             '<p class="cart-dish-title">Салат</p>' +
-            '<div class="count-dish"><div class="count-dish-btn"><a href="#"><i class="far fa-minus-square"></i></a></div><p id="qunt_'+i+'">' + quantity + '</p><div class="count-dish-btn"><a onclick="addQuantityOfDish('+i+')"><i class="far fa-plus-square"></i></a></div></div>' +
+            '<div class="count-dish"><div class="count-dish-btn"><a onclick="removeQuantityOfDish(' + i + ')"><i class="far fa-minus-square"></i></a></div><p id="qunt_' + i + '">' + quantity + '</p><div class="count-dish-btn"><a onclick="addQuantityOfDish(' + i + ')"><i class="far fa-plus-square"></i></a></div></div>' +
             '<p class="cart-dish-cost">100 грн</p></div></div>';
     }
     flag++;
@@ -77,14 +77,16 @@ function addToBasket(id, quantity) {
     if (get_cookie("order") == null) {
         var arrdish = [];
         arrdish[0] = dish;
-        setCookie("order", JSON.stringify(arrdish));
         $('.cart-list').append(basket);
+        setCookie("order", JSON.stringify(arrdish));
+
     } else {
         var order_dishes = get_cookie("order");
         var storedAry = JSON.parse(order_dishes);
         storedAry.push(dish);
-        setCookie("order", JSON.stringify(storedAry));
         $('.cart-list').append(basket);
+        setCookie("order", JSON.stringify(storedAry));
+
 
     }
 }
@@ -101,16 +103,29 @@ function delete_from_basket(item_id) {
     setCookie("order", JSON.stringify(order_dishes));
 }
 
-function addQuantityOfDish(item_id){
+function addQuantityOfDish(item_id) {
     var order_dishes = get_cookie("order");
     order_dishes = JSON.parse(order_dishes);
     for (let x = 0; x < order_dishes.length; x++) {
         if (item_id == x) {
             order_dishes[x][1]++;
-            $(".qunt_"+x).text()
+            $('#qunt_' + x).text(order_dishes[x][1])
         }
     }
+    setCookie("order", JSON.stringify(order_dishes));
+}
 
+function removeQuantityOfDish(item_id) {
+    var order_dishes = get_cookie("order");
+    order_dishes = JSON.parse(order_dishes);
+    for (let x = 0; x < order_dishes.length; x++) {
+        if (item_id == x) {
+            if (order_dishes[x][1] > 1) {
+                order_dishes[x][1]--;
+                $('#qunt_' + x).text(order_dishes[x][1]);
+            }
+        }
+    }
     setCookie("order", JSON.stringify(order_dishes));
 }
 
@@ -137,32 +152,25 @@ $(document).ready(function () {
             '<div class="cart-col">' +
             '<div class="delete-dish"><a onclick="delete_from_basket(' + x + ')"><i class="fas fa-times"></i></a></div>' +
             '<p class="cart-dish-title">Салат</p>' +
-            '<div class="count-dish"><div class="count-dish-btn"><a href="#"><i class="far fa-minus-square"></i></a></div><p id="qunt_'+x+'">' + order_dishes[x][1] + '</p><div class="count-dish-btn"><a onclick="addQuantityOfDish('+x+')"><i class="far fa-plus-square"></i></a></div></div>' +
+            '<div class="count-dish"><div class="count-dish-btn"><a onclick="removeQuantityOfDish(' + x + ')"><i class="far fa-minus-square"></i></a></div><p id="qunt_' + x + '">' + order_dishes[x][1] + '</p><div class="count-dish-btn"><a onclick="addQuantityOfDish(' + x + ')"><i class="far fa-plus-square"></i></a></div></div>' +
             '<p class="cart-dish-cost">100 грн</p></div></div>';
         $('.cart-list').append(basket);
         // blockButton(order_dishes, x);
     }
 });
 
-window.onload = function(){
+window.onload = function () {
     var order_dishes = get_cookie("order");
     order_dishes = JSON.parse(order_dishes);
 
     for (let j = 0; j < order_dishes.length; j++) {
-
-        var div = document.getElementsByClassName('order-button');
-        var elems = div.querySelector('[id]');
-        for(var i=0; i<elems.length; i++)
-        { console.log(elems[i].id); }
+        var pathToCart = 'button_' + order_dishes[j][0];
+        var cart = document.getElementsByClassName('order-button');
+        var cart2 = cart.getElementById('id');
+        if (order_dishes[j][0] == cart) {
+            $('#button_' + id).attr("disabled", true);
+            $('#button_' + id).attr('onclick', '').unbind('click');
+        }
     }
-
-
-
-    //     var pathToCart = 'button_' + order_dishes[j][0];
-    //     var cart = this.document.getElementById('dish-card')
-    //     if (order_dishes[j][0] == cart) {
-    //         $('#button_' + id).attr("disabled", true);
-    //         $('#button_' + id).attr('onclick', '').unbind('click');
-    //     }
-    // }
+    setCookie("order", JSON.stringify(order_dishes));
 }
