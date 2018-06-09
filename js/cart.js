@@ -77,15 +77,15 @@ function addToBasket(id, quantity) {
     if (get_cookie("order") == null) {
         var arrdish = [];
         arrdish[0] = dish;
-        $('.cart-list').append(basket);
         setCookie("order", JSON.stringify(arrdish));
+        $('.cart-list').append(basket);
 
     } else {
         var order_dishes = get_cookie("order");
         var storedAry = JSON.parse(order_dishes);
         storedAry.push(dish);
-        $('.cart-list').append(basket);
         setCookie("order", JSON.stringify(storedAry));
+        $('.cart-list').append(basket);
 
 
     }
@@ -113,6 +113,7 @@ function addQuantityOfDish(item_id) {
         }
     }
     setCookie("order", JSON.stringify(order_dishes));
+    console.log(getJsonArrayFromCoockie());
 }
 
 function removeQuantityOfDish(item_id) {
@@ -166,7 +167,11 @@ window.onload = function () {
     for (let j = 0; j < order_dishes.length; j++) {
         var pathToCart = 'button_' + order_dishes[j][0];
         var cart = document.getElementsByClassName('order-button');
-        var cart2 = cart.getElementById('id');
+        var cart2 = cart.getAttribute("id");
+
+        // var div1 = document.getElementById("div1");
+        // var align = div1.getAttribute("align");
+
         if (order_dishes[j][0] == cart) {
             $('#button_' + id).attr("disabled", true);
             $('#button_' + id).attr('onclick', '').unbind('click');

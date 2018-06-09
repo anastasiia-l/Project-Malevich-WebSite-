@@ -4,8 +4,8 @@
 }
 
 @font-face {
-  font-family:"ADAM.CG PRO"; /* Гарнитура шрифта */
-  src: url(fonts/ADAM.CG_PRO.ttf); /* Путь к файлу со шрифтом */
+  font-family:  "ADAM.CG PRO"; /* Гарнитура шрифта */
+  scr: url("fonts/ADAM.CG_PRO.ttf") format(truetype); /* Путь к файлу со шрифтом */
  }
 
 body {
