@@ -1,8 +1,7 @@
 var main = function() { //главная функция
  
-    $('.busket-btn').click(function() { /* выбираем класс icon-menu и
+    $('.busket-btn').click(function(e) { /* выбираем класс icon-menu и
                добавляем метод click с функцией, вызываемой при клике */
- 
         $('.cart').animate({ //выбираем класс menu и метод animate
  
             right: '0px' /* теперь при клике по иконке, меню, скрытое за
@@ -21,8 +20,8 @@ var main = function() { //главная функция
  
 /* Закрытие меню */
  
-    $('.icon-close').click(function() { //выбираем класс icon-close и метод click
- 
+    $('.icon-close').click(function(e) { //выбираем класс icon-close и метод click
+        e.preventDefault();
         $('.cart').animate({ //выбираем класс menu и метод animate
  
             right: '-285px' /* при клике на крестик меню вернется назад в свое
