@@ -11,6 +11,7 @@
 	<link href="css/fixed_header.css" rel="stylesheet">
 	<link href="css/topbutton.css" rel="stylesheet">
 	<link href="css/entry.css" rel="stylesheet">
+	<link href="css/modal_dishcard.css" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
 	 crossorigin="anonymous">
@@ -415,7 +416,20 @@
 			  <h3 class="entry-title">Спасибо за регистрацию</h3>
 			  <p class="entry-label">Подтверждение будет отправлено на указанный телефон в ближайшее время</p>
 			</div>
-		  </div>
+			</div>
+			
+			<div class="b-popup" id="popup-dishcard">
+				<div class="b-popup-content-dishcard">
+					<p>
+						<a class="close-button" href="#" onclick="PopUpDishCardHide()">
+							<i class="fas fa-times"></i>
+						</a>
+					</p>
+					<img class="dishcard-img" src="images/dish4.jpg">
+					<p class="dishcard-title">Название fdghjklkjhgfdsdfghj dfghjkgfds fdg dfghjk sdfghjk sdfghj</p>
+					<div class="dishcard-description">Описание арполл порлд рол рол рпол</div>
+				</div>
+			</div>
 
 		<div class="footer">
 			<img class="footer-logo" src="images/logo.png" alt="Малевич">
@@ -480,6 +494,7 @@
 		<script type="text/javascript" src="js/topbutton.js"></script>
 		<script type="text/javascript" src="js/entryform.js"></script>
 		<script type="text/javascript" src="js/registrationform.js"></script>
+		<script type="text/javascript" src="js/modal_dishcard.js"></script>
 
 </body>
 
