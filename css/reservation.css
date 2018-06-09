@@ -186,6 +186,62 @@ input {
   width: 100%;
   height: auto;
 }
+
+.row { 
+  margin-bottom: 4px !important; 
+  margin-left: auto; 
+  margin-right: auto; 
+} 
+ 
+#entrylogin, 
+#entry-password, 
+#reglogin, 
+#regname, 
+#regtel, 
+#regpassword, 
+#confirmpassword, 
+#birthdate { 
+  background-color: transparent !important; 
+  border: none !important; 
+  border-bottom: 1px solid #9e9e9e !important; 
+  border-radius: 0 !important; 
+  outline: none !important; 
+  height: 3rem; 
+  width: 100%; 
+  font-size: 16px; 
+  margin: 0 0 8px 0 !important; 
+  padding: 0 !important; 
+  -webkit-box-shadow: none !important; 
+  box-shadow: none !important; 
+  -webkit-box-sizing: content-box !important; 
+  box-sizing: content-box !important; 
+  -webkit-transition: border .3s, -webkit-box-shadow .3s !important; 
+  transition: border .3s, -webkit-box-shadow .3s !important; 
+  transition: box-shadow .3s, border .3s !important; 
+  transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s !important; 
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif !important; 
+  font-style: normal!important; 
+  font-weight: 400 !important; 
+} 
+ 
+#birthdate { 
+  /* font-family: "Oswald Bold", "Oswald Regular", "Oswald"; */ 
+  font-weight: 100; 
+  font-style: normal; 
+  color: #343434; 
+}
+
+.enter_to_profile {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 16px;  
+}
+
+.enter_to_profile a {
+  color: rgb(34, 34, 34);
+  text-decoration: underline;
+}
+
 ::-webkit-inner-spin-button {
   display: none;
 }
