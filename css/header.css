@@ -3,6 +3,11 @@
   margin: 0px;
 }
 
+@font-face {
+  font-family:  "ADAM.CG PRO"; /* Гарнитура шрифта */
+  scr: url("fonts/ADAM.CG_PRO.ttf") format(truetype); /* Путь к файлу со шрифтом */
+ }
+
 body {
   width: 100%;
   height: 100%;
