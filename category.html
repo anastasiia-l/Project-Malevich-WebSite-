@@ -43,31 +43,7 @@
       <div class="cart-title">Заказ</div>
     </div>
     <div class="cart-list">
-      <div class="cart-dish">
-        <img src="images/dish1.jpg">
-        <div class="cart-col">
-          <div class="delete-dish">
-            <a href="#">
-              <i class="fas fa-times"></i>
-            </a>
-          </div>
-          <p class="cart-dish-title">Салат</p>
-          <div class="count-dish">
-            <div class="count-dish-btn">
-              <a href="#">
-                <i class="far fa-minus-square"></i>
-              </a>
-            </div>
-            <p>1</p>
-            <div class="count-dish-btn">
-              <a href="#">
-                <i class="far fa-plus-square"></i>
-              </a>
-            </div>
-          </div>
-          <p class="cart-dish-cost">100 грн</p>
-        </div>
-      </div>
+
     </div>
     <div class="cart-footer">
       <div class="cart-sum">
@@ -321,7 +297,7 @@
 					</div>
 					<p class="dish-cost">568
 					</p>
-							<div class="order-button">Заказать</div>
+							<div class="order-button" id="button_1" onclick="addToBasket(1, 1)">Заказать</div>
 				</div>
 				<div class="dish-card">
 					<img class="dish-img" src="images/dish4.jpg">
@@ -331,7 +307,7 @@
 					</div>
 					<p class="dish-cost">568
 					</p>
-							<div class="order-button">Заказать</div>
+							<div class="order-button" id="button_2" onclick="addToBasket(2, 1)">Заказать</div>
 				</div>
 				<div class="dish-card">
 					<img class="dish-img" src="images/dish4.jpg">
@@ -344,7 +320,7 @@
 					</div>
 					<p class="dish-cost">568
 					</p>
-							<div class="order-button">Заказать</div>
+							<div class="order-button" id="button_3" onclick="addToBasket(3, 1)">Заказать</div>
 				</div>
 				<div class="dish-card">
 					<img class="dish-img" src="images/dish4.jpg">
@@ -354,7 +330,7 @@
 					</div>
 					<p class="dish-cost">568
 					</p>
-							<div class="order-button">Заказать</div>
+							<div class="order-button" id="button_4" onclick="addToBasket(4, 1)">Заказать</div>
 				</div>
 				<div class="dish-card">
 					<img class="dish-img" src="images/dish4.jpg">
@@ -364,7 +340,7 @@
 					</div>
 					<p class="dish-cost">568
 					</p>
-							<div class="order-button">Заказать</div>
+							<div class="order-button" id="button_20" onclick="addToBasket(20, 2)">Заказать</div>
 				</div>
 			</div>
 		</div>
@@ -537,14 +513,18 @@
 			</div>
 		</div>
 
+		<input type="text" value="1" min="1">
+		<p>' + order_dishes[x][1] + '</p>
+
 		<script src="js/fixed_header.js"></script>
 		<script type="text/javascript" src="js/menu.js"></script>
 		<script type="text/javascript" src="js/topbutton.js"></script>
 		<script type="text/javascript" src="js/entryform.js"></script>
 		<script type="text/javascript" src="js/registrationform.js"></script>
 		<script type="text/javascript" src="js/modal_dishcard.js"></script>
-
 		<script type="text/javascript" src="js/busket.js"></script>
+		<script type="text/javascript" src="js/cart.js"></script>
+
 </body>
 
 <footer></footer>
