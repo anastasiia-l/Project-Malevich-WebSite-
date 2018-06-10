@@ -240,7 +240,46 @@ input {
 .enter_to_profile a {
   color: rgb(34, 34, 34);
   text-decoration: underline;
+  cursor: pointer;
 }
+
+.sendReservation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  background-color: #ea2727;
+  color: white;
+  border-radius: 5px;
+  height: 60px;
+  font-size: 20px;
+  -webkit-transition: all 0.3s ease;;
+  -moz-transition: all 0.3s ease;;
+  -o-transition: all 0.3s ease;;
+  transition: all 0.3s ease;
+  opacity: 1;
+  -moz-user-select: none;
+-khtml-user-select: none;
+user-select: none; 
+}
+
+.sendReservation:hover{
+  background-color: #ee1414;
+  -webkit-transform: scale(0.99);
+  -ms-transform: scale(0.99);
+  transform: scale(0.99);
+}
+
+.sendReservation::after{
+  background-color: #ff0202;
+  -webkit-transform: scale(0.85);
+  -ms-transform: scale(0.85);
+  transform: scale(0.85);
+}
+
 
 ::-webkit-inner-spin-button {
   display: none;
